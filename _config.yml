@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Inigo de la Maza"
+title                    : "Iñigo de la Maza"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Iñigo de la Maza"
@@ -108,14 +108,14 @@ analytics:
 # Site Author
 author:
   name             : "Iñigo de la Maza"
-  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Aspiring polymath."
+  avatar           : "/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Data Science Portfolio"
   location         : "Boston, MA"
   email            : "i.delamaza.prieto@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:i.delamaza.prieto@gmail.com
+      url: mailto:i.delamaza.prieto@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -125,9 +125,12 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-#    - label: "GitHub"
- #     icon: "fab fa-fw fa-github"
-  #     url: "https://github.com/inigodelamaza"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/i-delamaza/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/inigodelamaza"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"

@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: archive
 title: "About"
 excerpt: "A brief introduction to my journey in Data Science"
 permalink: /about/

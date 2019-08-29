@@ -1,9 +1,9 @@
 ---
-layout: archive
+layout: splash
 title: "About"
-excerpt: "A brief introduction to my journey in Data Science"
 permalink: /about/
 header:
+	overlay_color: true
   image: "/images/map.jpg"
 author_profile: false
 ---

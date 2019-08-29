@@ -8,7 +8,7 @@ header:
 ---
 
 {% include base_path %}
-{% include group-by-array collection=site.posts-tag %}
+{% include group-by-array collection=site.posts-tag.html %}
 
 {% for tag in group_names %}
   {% assign posts = group_items[forloop.index0] %}

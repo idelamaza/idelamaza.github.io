@@ -1,6 +1,7 @@
 ---
 layout: splash
-title: "About"
+title: 'About'
+escerpt: "My journey towards Data Science"
 permalink: /about/
 header:
   image: "/images/map.jpg"

@@ -111,11 +111,11 @@ author:
   avatar           : "/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Science Portfolio"
   location         : "Boston, MA"
-  email            : "i.delamaza.prieto@gmail.com"
+  email            : "delamaza@mit.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:i.delamaza.prieto@gmail.com
+      # url: mailto:delamaza@mit.edu
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"

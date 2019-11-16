@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 'About'
+title: 'My journey towards Data Science'
 escerpt: "My journey towards Data Science"
 permalink: /about/
 sitemap: false

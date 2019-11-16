@@ -5,7 +5,7 @@ escerpt: "My journey towards Data Science"
 permalink: /about/
 sitemap: false
 header:
-  image: "/images/map.jpg"
+  image: "/images/road.jpg"
 ---
 
 I'm an industrial engineer currently writing my Master Thesis at the Institute for Medical Engineering and Science (IMES) of the Massachusetts Institute of Technology (MIT). I am developing high dimensional methematical models of blood coagulation under flow. 

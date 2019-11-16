@@ -1,5 +1,6 @@
 ---
 title: "The Golden Ratio of Productivity"
+layout: single
 date: 2019-30-08
 tags: [productivity, python, neural network]
 header:

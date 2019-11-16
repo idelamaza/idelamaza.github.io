@@ -1,11 +1,15 @@
 ---
-layout: splash
+layout: single
 title: 'About'
 escerpt: "My journey towards Data Science"
 permalink: /about/
+sitemap: false
 header:
   image: "/images/map.jpg"
 ---
 
-I'm a Data Scientist currently writing my Master Thesis at the Massachusetts Institute of Technology.
-I excel at machine learning, exploratory analysis and data visualization.
+I'm an industrial engineer currently writing my Master Thesis at the Institute for Medical Engineering and Science (IMES) of the Massachusetts Institute of Technology (MIT). I am developing high dimensional methematical models of blood coagulation under flow. 
+
+Two years ago, my passion about data science began when working at the Technical University of Catalonia's Biomechanical Engineering Lab (BIOMEC). Having to dive into huge amounts of data generated in a project concerning the use of industrial exoskeletons in the automotive industry led me to discovering the power of data analytics and artificial inteligence. I haven't stopped learning about this field eversince, whether it was with books, MOOC's or MIT courses. This is the place where the journey gets documented.
+
+CV

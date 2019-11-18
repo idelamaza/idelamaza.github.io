@@ -312,8 +312,9 @@ body:hover .visually-hidden button {
     color: $youtube-color;
   }
 
-  .fa-download {
-    color: $tumblr-color;
+  .fa-download,
+  .fa-download-square {
+    color: $download-color;
   }
 
   .fa-xing,

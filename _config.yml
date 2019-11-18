@@ -114,7 +114,8 @@ author:
   email            : "delamaza@mit.edu"
   cv               : "/files/Resume_delaMaza.pdf"
   linkedin         : "https://www.linkedin.com/in/i-delamaza/"
-  github           : "https://github.com/inigodelamaza"
+  #github           : "https://github.com/inigodelamaza"
+  
   #links:
   #  - label: "LinkedIn"
   #    icon: "fab fa-fw fa-linkedin"

@@ -113,13 +113,15 @@ author:
   location         : "Boston, MA"
   email            : "delamaza@mit.edu"
   cv               : "/files/Resume_delaMaza.pdf"
-  links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/i-delamaza/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/inigodelamaza"
+  linkedin         : "https://www.linkedin.com/in/i-delamaza/"
+  github           : "https://github.com/inigodelamaza"
+  #links:
+  #  - label: "LinkedIn"
+  #    icon: "fab fa-fw fa-linkedin"
+  #    url: "https://www.linkedin.com/in/i-delamaza/"
+  #  - label: "GitHub"
+  #    icon: "fab fa-fw fa-github"
+  #    url: "https://github.com/inigodelamaza"
 
 # Site Footer
 footer:

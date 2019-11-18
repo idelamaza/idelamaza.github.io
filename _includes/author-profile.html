@@ -73,6 +73,13 @@
         </li>
       {% endif %}
 
+      {% if author.cv %}
+        <li>
+          <a href="{{ author.cv }}" download><i class="fas fa-fw fa-download" aria-hidden="true"></i> Download CV
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.keybase %}
         <li>
           <a href="https://keybase.io/{{ author.keybase }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
@@ -253,13 +260,6 @@
         <li>
           <a href="https://vine.co/u/{{ author.vine }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-vine" aria-hidden="true"></i> Vine
-          </a>
-        </li>
-      {% endif %}
-
-      {% if author.cv %}
-        <li>
-          <a href="{{ author.cv }}" download><i class="fas fa-fw fa-download" aria-hidden="true"></i> Download CV
           </a>
         </li>
       {% endif %}

@@ -1,13 +1,11 @@
 ---
-title: "Productivity"
-permalink: /archive-layout-with-content/
-layout: tag
-taxonomy: Data Science
-date: 2019-30-08
-tags: [productivity, python, neural network]
+title: Productivity
+layout: archive
+category: Data Science
 header:
 	image: "/images/.jpg"
-excerpt: "Productivity, Python, Machine Learning"
+excerpt: "A post"
+
 ---
 
 A variety of common markup showing how the theme styles them.

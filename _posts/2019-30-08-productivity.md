@@ -1,6 +1,6 @@
 ---
 title: "The Golden Ratio of Productivity"
-layout: category
+layout: tag
 taxonomy:  Data Science
 date: 2019-30-08
 tags: [productivity, python, neural network]

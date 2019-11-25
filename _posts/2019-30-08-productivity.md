@@ -5,7 +5,6 @@ tags: [productivity, machine learning, neural networks]
 header:
 	image: "/images/.jpg"
 excerpt: "A post"
-
 ---
 
 A variety of common markup showing how the theme styles them.

@@ -5,7 +5,6 @@ permalink: /projects/
 author_profile: true
 header:
   image: "/images/data.jpg"
-mathjax: true
 ---
 
 Some posts ordered by tag:

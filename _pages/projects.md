@@ -7,6 +7,6 @@ header:
   image: "/images/data.jpg"
 ---
 
-{% for post in site.posts}
-	{% include archive-single.html}
-{% endfor}
+{% for post in site.posts %}
+	{% include archive-single.html %}
+{% endfor %}

@@ -1,6 +1,7 @@
 ---
 title: Productivity
 date: 2018-30-08
+layout: single
 categories: Data Science
 header:
 	image: "/images/.jpg"

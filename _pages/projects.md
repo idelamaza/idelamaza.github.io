@@ -1,17 +1,12 @@
 ---
 title: "Data Science Projects"
-layout: categories
+layout: single
 permalink: /projects/
 author_profile: true
 header:
   image: "/images/data.jpg"
 ---
 
-{% for category in site.categories %}
-  <h3>{{ category[0] }}</h3>
-  <ul>
-    {% for post in category[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endfor %}
+{% for post in site.posts}
+	{% include archive-single.html}
+{% endfor}

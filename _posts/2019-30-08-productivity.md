@@ -2,8 +2,8 @@
 layout: single
 title: "Productivity"
 date: 2018-08-30
-categories: "Data Science"
-excerpt: "A post"
+categories: [Data Science]
+excerpt: "The golden ratio of productivity"
 ---
 
 A variety of common markup showing how the theme styles them.

@@ -1,7 +1,7 @@
 ---
-title: "Productivity"
-date: 2018-30-08
 layout: single
+title: "Productivity"
+date: 2018-08-30
 categories: "Data Science"
 excerpt: "A post"
 ---

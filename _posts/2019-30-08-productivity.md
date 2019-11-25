@@ -1,7 +1,7 @@
 ---
-title: Productivity
-layout: archive
-category: Data Science
+title: "Productivity"
+date: 2018-01-18
+tags: [productivity, machine learning, neural networks]
 header:
 	image: "/images/.jpg"
 excerpt: "A post"

@@ -15,8 +15,7 @@ We are advancing towards a paper-less (better) world, where where static, unmodi
 Here's an example of how to use plotly to generate a gant chart for representing a timeseries of discrete events:
 
 <figure>
-    <iframe src="/charts/2019-11-26-interactive-visualizations-with-plotly/gant.html"></iframe>
-    <figcaption>Caption describing the chart.</figcaption>
+    <iframe width= "900" height= "800" frameborder= "0" scrolling="no" src="/charts/2019-11-26-interactive-visualizations-with-plotly/gant.html"></iframe>
 </figure>
 
 

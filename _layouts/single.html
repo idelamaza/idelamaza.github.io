@@ -28,7 +28,7 @@ layout: default
         <header>
           {% if page.title %}<h2 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h2>{% endif %}
           {% if page.read_time %}
-            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+            <p><small> class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</small></p>
           {% endif %}
         </header>
       {% endunless %}

@@ -37,7 +37,7 @@
   }
 
   @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1em);
+    width: calc(#{$right-sidebar-width} - 2em);
   }
 
   > * {
@@ -140,8 +140,8 @@
 .author__content {
   display: table-cell;
   vertical-align: top;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
   line-height: 1;
 
   @include breakpoint($large) {

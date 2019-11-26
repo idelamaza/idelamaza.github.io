@@ -4,8 +4,8 @@ title: "Interactive visualizations with Plotly"
 date: 2019-11-26
 categories: [Data Visualization]
 tags: [Plotly, Python]
-excerpt: ""*Static plots do not belong to the 21st century*" - Some clever person"
-author_profile: false
+excerpt: "Static plots do not belong to the 21st century - Some clever person"
+author_profile: true
 ---
 
 We are advancing towards a paper-less (better) world, where where static, unmodifiable representations of any kind of data start to lack a reason to exist.

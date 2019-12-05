@@ -22,7 +22,7 @@ A bit about me:
 ## Education
 {: style="text-align: center;"}
 
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/MIT-logo-black-red.jpg){: .align-right}
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/about/MIT_logo_black_red.jpg){: .align-right}
 
 ### Massachusetts Institute of Technology 
 _Visiting student, February 2019-Present_

@@ -20,21 +20,31 @@ An updated copy of my Resumé can be downloaded here. However, here are some fac
   * Proven abilities to work independently and under high pressure
   * Passion for problem solving and constant personal growth
 
-## Education
+## Research Experience
 {: style="text-align: center;"}
 ---
 
 ### Massachusetts Institute of Technology ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
-_Visiting student_<br /><small>_(February 2019 - May 2020)_</small>
+_Research Affiliate at Clinical Research Center_<br /><small>_(February 2019 - May 2020)_</small>
+
+### UPC's Biomedical Engineering Research Center![image-right]({{ site.url }}{{ site.baseurl }}/images/about/creb.jpg){: .align-right}
+_Research Intern_<br /><small>_(February 2019 - May 2020)_</small>
+
+## Education
+{: style="text-align: center;"}
+---
+
+### Massachusetts Institute of Technology (MIT) ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
+_Visiting student at Institute for Medical Engineering and Science_<br /><small>_(February 2019 - May 2020)_</small>
 
 ### EAE Business School ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/eae.jpg){: .align-right}
 _Candidate for Online MBA_<br /><small>_(September 2018 - May 2020)_</small>
 
-### Polytechnic University of Catalonia ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/upc.png){: .align-right}
+### Polytechnic University of Catalonia (UPC)![image-right]({{ site.url }}{{ site.baseurl }}/images/about/upc.png){: .align-right}
 _Candidate for MS in Industrial Engineering_<br /><small>_(September 2017 - May 2020)_</small>
 
 ### Technical University of Darmstadt ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/TUDa.png){: .align-right}
 _Visiting student_<br /><small>_(March 2017 - August 2017)_</small>
 
-### Public University of Navarre ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/upna.png){: .align-right}
+### Public University of Navarre (UPNA) ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/upna.png){: .align-right}
 _BS in Industrial Engineering_<br /><small>_(September 2013 - August 2017)_</small>

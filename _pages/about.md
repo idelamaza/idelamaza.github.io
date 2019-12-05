@@ -28,9 +28,13 @@ A bit about me:
 _Visiting student, February 2019-Present_
 
   * Master Thesis at [IMES](http://imes.mit.edu/ "IMES"): _“Tailoring Systems Pharmacology through Computational Models”_
-  * MIT 15.095 - _Machine Learning Under a Modern Optimization Lens_ (Prof. Dimitris Bertsimas)
+  * MIT 15.095 - _Machine Learning Under a Modern Optimization Lens_
+  <small>(Prof. Dimitris Bertsimas)</small>
 	- Convex, robust and mixed integer optimization in machine learning
 	- Course capstone on predicting children performance in educational game apps
-  * MIT 2.98 - _Sports Technology: Engineering & Innovation_ (Prof. Anette (Peko) Hosoi & Christina Chase)
+  * MIT 2.98 - _Sports Technology: Engineering & Innovation_ 
+  (Prof. Anette (Peko) Hosoi & Christina Chase)
 	- Participated in a data science project for an international sport industry organization in team of seven
 	- Roles: sub-team leader, developed an event detection and classification model
+
+

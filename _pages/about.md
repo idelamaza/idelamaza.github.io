@@ -22,6 +22,9 @@ A bit about me:
 ## Education
 {: style="text-align: center;"}
 
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/about/MIT-logo-black-red.jpg)
+
+
 ![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/about/MIT-logo-black-red.jpg){: .align-right}
 
 ### Massachusetts Institute of Technology 

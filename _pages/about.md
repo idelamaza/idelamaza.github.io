@@ -38,7 +38,13 @@ _Visiting student_<br /><small>_(February 2019-Present)_</small>
 ### EAE Business School ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/eae.jpg){: .align-right}
 _Candidate for Online MBA_<br /><small>_(September 2018-Present)_</small>
 
-  * Expected graduation date: May 2020
   * Relevant coursework: Control Management, Managerial Skills, Accounting
+  * Expected graduation date: May 2020
 
+### Polytechnic University of Catalonia ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/upc.png){: .align-right}
+_Candidate for MS in Industrial Engineering_<br /><small>_(September 2017-Present)_</small>
+
+  * Minor in Biomedical Engineering | 2-year program | GPA: 3.60 | 3 courses with honors
+  * Relevant coursework: Modelling and Simulation of Biomedical Systems, Technological Innovation, Industrial Scheduling, Process Control, Transports
+  * Expected graduation date: May 2020
 

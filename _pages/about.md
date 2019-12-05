@@ -22,14 +22,12 @@ A bit about me:
 ## Education
 {: style="text-align: center;"}
 
-<figure style="width: 75px" class="align-right">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/MIT-logo-black-red.jpg" alt="">
-</figure> 
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/MIT-logo-black-red.jpg){: .align-right}
 
 ### Massachusetts Institute of Technology 
 _Visiting student, February 2019-Present_
 
-  * Master Thesis at [IMES](http://imes.mit.edu/ "IMES"): _“Constrained Diagnostics through High-Dimensional Models”_
+  * Master Thesis at [IMES](http://imes.mit.edu/ "IMES"): _“Tailoring Systems Pharmacology through Computational Models”_
   * MIT 15.095 - _Machine Learning Under a Modern Optimization Lens_ (Prof. Dimitris Bertsimas)
 	- Convex, robust and mixed integer optimization in machine learning
 	- Course capstone on predicting children performance in educational game apps

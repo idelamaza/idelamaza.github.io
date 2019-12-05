@@ -1,6 +1,6 @@
 ---
 layout: single
-excerpt: 'About'
+title: false
 permalink: /about/
 sitemap: false
 header:
@@ -15,8 +15,8 @@ My name is Iñigo de la Maza, I am an industrial engineer currently writing my M
 ## Education
 {: style="text-align: center;"}
 
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/about/MIT-logo-black-red-72x38.svg.jpg){: .align-right} 
-###Massachusetts Institute of Technology 
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/about/MIT-logo-black-red.png){: .align-right} 
+### Massachusetts Institute of Technology 
 _Visiting student, February 2019-Present_
 
   * Master Thesis at [IMES](http://imes.mit.edu/ "IMES"): _“Constrained Diagnostics through High-Dimensional Models”_

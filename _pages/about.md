@@ -23,7 +23,7 @@ A bit about me:
 {: style="text-align: center;"}
 
 <figure style="width: 75px" class="align-right">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/MIT-logo-black-red.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/MIT-logo-black-red.jpg" alt="">
 </figure> 
 
 ### Massachusetts Institute of Technology 

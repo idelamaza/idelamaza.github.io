@@ -3,6 +3,7 @@ layout: single
 title: "Productivity"
 date: 2018-08-30
 categories: [Data Science]
+tags: [Kaggle, Timeseries]
 excerpt: "The golden ratio of productivity"
 ---
 

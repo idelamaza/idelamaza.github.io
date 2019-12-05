@@ -3,7 +3,8 @@ layout: single
 title: "Interactive visualizations with Plotly"
 date: 2019-11-26
 categories: [Data Visualization]
-excerpt: "Static plots do not belong to the 21st century Some clever person"
+tags: [Kaggle, Timeseries]
+excerpt: "Static plots do not belong to the 21st century"
 author_profile: true
 ---
 

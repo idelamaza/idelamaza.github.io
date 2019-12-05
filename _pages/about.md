@@ -15,7 +15,7 @@ My name is Iñigo de la Maza, I am an industrial engineer currently writing my M
 
 I discovered my passion about data science around two years ago and I haven't stopped learning about this field eversince, whether it was with books, MOOC's or MIT courses. This is the place where the journey gets documented.
 
-An updated copy of my Resumé can be downloaded here. However, here are some facts about me:
+An updated copy of my resumé can be downloaded here. However, here are some facts about me:
   * Responsible, hard-working, adaptable and very motivated industrial engineer with a strong interest in data science, artificial intelligence and machine learning
   * Proven abilities to work independently and under high pressure
   * Passion for problem solving and constant personal growth

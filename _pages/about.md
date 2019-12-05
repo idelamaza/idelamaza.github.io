@@ -27,7 +27,7 @@ An updated copy of my Resumé can be downloaded here. However, here are some fac
 ### Massachusetts Institute of Technology ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
 _Research Affiliate at Clinical Research Center_<br /><small>_(February 2019 - May 2020)_</small>
 
-### UPC's Biomedical Engineering Research Center![image-right]({{ site.url }}{{ site.baseurl }}/images/about/creb.jpg){: .align-right}
+### UPC's Biomedical Engineering Research Center![image-right]({{ site.url }}{{ site.baseurl }}/images/about/creb.png){: .align-right}
 _Research Intern_<br /><small>_(February 2019 - May 2020)_</small>
 
 ## Education

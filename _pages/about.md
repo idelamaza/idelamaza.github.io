@@ -24,7 +24,9 @@ A bit about me:
 {: style="text-align: center;"}
 ---
 
-![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
+<figure style="width: 54px" class="align-right">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/about/MIT-logo-black-red-54x28.svg" alt="">
+</figure> 
 
 ### Massachusetts Institute of Technology 
 _Visiting student, February 2019-Present_

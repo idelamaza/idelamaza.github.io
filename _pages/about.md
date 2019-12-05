@@ -24,8 +24,7 @@ A bit about me:
 {: style="text-align: center;"}
 ---
 
-![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
-### Massachusetts Institute of Technology 
+### Massachusetts Institute of Technology ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
 _Visiting student, February 2019-Present_
 
   * Master Thesis at [IMES](http://imes.mit.edu/ "IMES"): _“Tailoring Systems Pharmacology through Computational Models”_

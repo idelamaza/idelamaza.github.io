@@ -25,8 +25,7 @@ A bit about me:
 ---
 
 ### Massachusetts Institute of Technology ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
-_Visiting student_
-<small>_(February 2019-Present)_</small>
+_Visiting student_<br /><small>_(February 2019-Present)_</small>
 
   * Master Thesis at [IMES](http://imes.mit.edu/ "IMES"): _“Tailoring Systems Pharmacology through Computational Models”_
   * MIT 15.095 - _Machine Learning Under a Modern Optimization Lens_<br /><small>(Prof. Dimitris Bertsimas)</small>
@@ -37,8 +36,7 @@ _Visiting student_
 	- Roles: sub-team leader, developed an event detection and classification model
 
 ### EAE Business School ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/eae.jpg){: .align-right}
-_Candidate for Online MBA_
-<small>_(September 2018-Present)_</small>
+_Candidate for Online MBA_<br /><small>_(September 2018-Present)_</small>
 
   * Expected graduation date: May 2020
   * Relevant coursework: Control Management, Managerial Skills, Accounting

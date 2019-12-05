@@ -155,10 +155,9 @@ This is an example of a [link](http://apple.com "Apple").
 
 The abbreviation CSS stands for "Cascading Style Sheets".
 
-*[CSS]: Cascading Style Sheets
+  *[CSS]: Cascading Style Sheets
 
 ### Cite Tag
-
 "Code is poetry." ---<cite>Automattic</cite>
 
 ### Code Tag

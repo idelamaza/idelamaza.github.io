@@ -25,7 +25,6 @@ A bit about me:
 ---
 
 ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
-
 ### Massachusetts Institute of Technology 
 _Visiting student, February 2019-Present_
 

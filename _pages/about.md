@@ -24,7 +24,8 @@ A bit about me:
 {: style="text-align: center;"}
 ---
 
-<h3>Massachusetts Institute of Technology</h3><br />_Visiting student_<br /><small>_(February 2019-May 2020)_</small>![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
+### Massachusetts Institute of Technology ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
+_Visiting student_<br /><small>_(February 2019-May 2020)_</small>
 
 ### EAE Business School ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/eae.jpg){: .align-right}
 _Candidate for Online MBA_<br /><small>_(September 2018-May 2020)_</small>

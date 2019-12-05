@@ -15,13 +15,14 @@ My name is Iñigo de la Maza, I am an industrial engineer currently writing my M
 ## Education
 {: style="text-align: center;"}
 
-### Massachusetts Institute of Technology ![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/about/MIT-logo-black-red-72x38.svg){: .align-left} 
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/about/MIT-logo-black-red-72x38.svg.jpg){: .align-right} 
+###Massachusetts Institute of Technology 
 _Visiting student, February 2019-Present_
 
-	* Master Thesis at [IMES](http://imes.mit.edu/ "IMES"): _“Constrained Diagnostics through High-Dimensional Models”_
-	* MIT 15.095 - _Machine Learning Under a Modern Optimization Lens_ (Prof. Dimitris Bertsimas)
-		- Convex, robust and mixed integer optimization in machine learning
-		- Course capstone on predicting children performance in educational game apps
-	* MIT 2.98 - _Sports Technology: Engineering & Innovation_ (Prof. Anette (Peko) Hosoi & Christina Chase)
-		- Participated in a data science project for an international sport industry organization in team of seven
-		- Roles: sub-team leader, developed an event detection and classification model
+  * Master Thesis at [IMES](http://imes.mit.edu/ "IMES"): _“Constrained Diagnostics through High-Dimensional Models”_
+  * MIT 15.095 - _Machine Learning Under a Modern Optimization Lens_ (Prof. Dimitris Bertsimas)
+	- Convex, robust and mixed integer optimization in machine learning
+	- Course capstone on predicting children performance in educational game apps
+  * MIT 2.98 - _Sports Technology: Engineering & Innovation_ (Prof. Anette (Peko) Hosoi & Christina Chase)
+	- Participated in a data science project for an international sport industry organization in team of seven
+	- Roles: sub-team leader, developed an event detection and classification model

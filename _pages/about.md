@@ -9,6 +9,7 @@ header:
 
 ## About me
 {: style="text-align: center;"}
+---
 
 My name is Iñigo de la Maza, I am an industrial engineer currently writing my Master Thesis at MIT on the development of computational computational models of blood coagulation under flow conditions. I am applying machine learning, mathematical modelling of systems biology and computational statistics techniques to understand the mechanisms behind unknown blood clotting phenomena and find direct applications in cardiovascular pharmacology. 
 
@@ -21,11 +22,9 @@ A bit about me:
 
 ## Education
 {: style="text-align: center;"}
+---
 
-![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/about/MIT-logo-black-red.jpg)
-
-
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/about/MIT-logo-black-red.jpg){: .align-right}
+![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
 
 ### Massachusetts Institute of Technology 
 _Visiting student, February 2019-Present_

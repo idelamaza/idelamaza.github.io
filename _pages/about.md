@@ -25,26 +25,11 @@ A bit about me:
 ---
 
 ### Massachusetts Institute of Technology ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
-_Visiting student_<br /><small>_(February 2019-Present)_</small>
-
-  * Master Thesis at [IMES](http://imes.mit.edu/ "IMES"): _“Tailoring Systems Pharmacology through Computational Models”_
-  * MIT 15.095 - _Machine Learning Under a Modern Optimization Lens_<br /><small>(Prof. Dimitris Bertsimas)</small>
-	- Convex, robust and mixed integer optimization in machine learning
-	- Course capstone on predicting children performance in educational game apps
-  * MIT 2.98 - _Sports Technology: Engineering & Innovation_ <br /><small>(Prof. Anette (Peko) Hosoi & Christina Chase)</small>
-	- Participated in a data science project for an international sport industry organization in team of seven
-	- Roles: sub-team leader, developed an event detection and classification model
+_Visiting student_<br /><small>_(February 2019-May 2020)_</small>
 
 ### EAE Business School ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/eae.jpg){: .align-right}
-_Candidate for Online MBA_<br /><small>_(September 2018-Present)_</small>
-
-  * Relevant coursework: Control Management, Managerial Skills, Accounting
-  * Expected graduation date: May 2020
+_Candidate for Online MBA_<br /><small>_(September 2018-May 2020)_</small>
 
 ### Polytechnic University of Catalonia ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/upc.png){: .align-right}
-_Candidate for MS in Industrial Engineering_<br /><small>_(September 2017-Present)_</small>
-
-  * Minor in Biomedical Engineering | 2-year program | GPA: 3.60 | 3 courses with honors
-  * Relevant coursework: Modelling and Simulation of Biomedical Systems, Technological Innovation, Industrial Scheduling, Process Control, Transports
-  * Expected graduation date: May 2020
+_Candidate for MS in Industrial Engineering_<br /><small>_(September 2017-May 2020)_</small>
 

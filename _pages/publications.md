@@ -9,18 +9,8 @@ header:
 
 ## Conference proceedings
 
-<small>__Biomechanical evaluation of upper limb exoskeletons in automotive assembly using EMG__</small>
-
-<small>_IX Meeting of the Spanish Chapter of the European Society of Biomechanics, 2019_</small>
-
-<small>With M. Claramunt-Molet, B. Domingo-Mateu, J. Danús-Jaume, V. Enriquez-Carrera,A. Ugartemendia-Etxarri, O. Muñoz-Fenández, S. Domingo, F. Miralles,J.M. Font-Llagunes, and S. Idelsohn-Zielonka</small>
-
-<small>([link](http://ixcapitulo-esb.ulpgc.es/wp-content/uploads/2019/10/Libro-de-Actas_IXCapituloEspanolESB_ISBN.pdf), pp.25-26)</small>
-
-
+<small>__Biomechanical evaluation of upper limb exoskeletons in automotive assembly using EMG__</small><br /><small>_IX Meeting of the Spanish Chapter of the European Society of Biomechanics, 2019_</small><br /><small>With M. Claramunt-Molet, B. Domingo-Mateu, J. Danús-Jaume, V. Enriquez-Carrera,A. Ugartemendia-Etxarri, O. Muñoz-Fenández, S. Domingo, F. Miralles,J.M. Font-Llagunes, and S. Idelsohn-Zielonka</small><br /><small>([link](http://ixcapitulo-esb.ulpgc.es/wp-content/uploads/2019/10/Libro-de-Actas_IXCapituloEspanolESB_ISBN.pdf), pp.25-26)</small>
 
 ## In progress
 
-<small>__Biomechanical evaluation of upper limb exoskeletons in automotive assembly using EMG__</small>
-
-<small>With K. Kolandaivelu and E.R. Edelman</small>
+<small>__Biomechanical evaluation of upper limb exoskeletons in automotive assembly using EMG__</small><br /><small>With K. Kolandaivelu and E.R. Edelman</small>

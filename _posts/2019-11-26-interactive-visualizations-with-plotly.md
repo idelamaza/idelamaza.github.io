@@ -8,7 +8,7 @@ excerpt: "Static plots do not belong to the 21st century"
 author_profile: true
 ---
 
-We are advancing towards a paper-less (better) world, where where static, unmodifiable representations of any kind of data start to lack a reason to exist.
+We are advancing towards a paper-less (better) world, where static, unmodifiable representations of any kind of data start to lack a reason to exist.
 {: style="text-align: justify;"}
 
 ### Timeseries visualization

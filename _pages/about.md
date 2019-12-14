@@ -7,7 +7,6 @@ sitemap: false
 header:
   image: "/images/road.jpg"
 ---
-
 ## About me
 {: style="text-align: center;"}
 ---

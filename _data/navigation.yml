@@ -4,19 +4,9 @@ main:
     url: /about/
   - title: "Publications"
     url: /publications/  
+  - title: "Portfolio"
+    url: /tags/
   #- title: "Portfolio"
   #  url: /projects/
   #- title: "Categories"
   #  url: /categories/
-  - title: "Portfolio"
-    url: /tags/
-
-#about_docs:
-#  - title: "About Me"
-  
-  #- title: "Sample Posts"
-  #  url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/

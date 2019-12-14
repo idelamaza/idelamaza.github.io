@@ -1,6 +1,7 @@
 ---
 layout: single
 title: false
+toc: true
 permalink: /about/
 sitemap: false
 header:

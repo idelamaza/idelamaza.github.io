@@ -24,27 +24,27 @@ An updated copy of my resumé can be downloaded [here]({{ site.url }}{{ site.bas
 ## Research Experience
 {: style="text-align: center;"}
 ---
- 
-__Massachusetts Institute of Technology__<br />_Research Affiliate at Clinical Research Center_<br /><small>_(February 2019 - May 2020)_</small> ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
+![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
+__Massachusetts Institute of Technology__<br />_Research Affiliate at Clinical Research Center_<br /><small>_(February 2019 - May 2020)_</small> 
 
-### UPC's Biomedical Engineering Research Center![image-right]({{ site.url }}{{ site.baseurl }}/images/about/creb.png){: .align-right}
-_Research Intern_<br /><small>_(February 2019 - May 2020)_</small>
+![image-right]({{ site.url }}{{ site.baseurl }}/images/about/creb.png){: .align-right}
+__UPC's Biomedical Engineering Research Center__<br />_Research Intern_<br /><small>_(February 2019 - May 2020)_</small>
 
 ## Education
 {: style="text-align: center;"}
 ---
 
-### Massachusetts Institute of Technology (MIT) ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
-_Visiting student at Institute for Medical Engineering and Science_<br /><small>_(February 2019 - May 2020)_</small>
+![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
+__Massachusetts Institute of Technology (MIT)__<br />_Visiting student at Institute for Medical Engineering and Science_<br /><small>_(February 2019 - May 2020)_</small>
 
-### EAE Business School ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/eae.jpg){: .align-right}
-_Candidate for Online MBA_<br /><small>_(September 2018 - May 2020)_</small>
+![image-right]({{ site.url }}{{ site.baseurl }}/images/about/eae.jpg){: .align-right}
+__EAE Business School__<br />_Candidate for Online MBA_<br /><small>_(September 2018 - May 2020)_</small>
 
-### Polytechnic University of Catalonia (UPC)![image-right]({{ site.url }}{{ site.baseurl }}/images/about/upc.png){: .align-right}
-_Candidate for MS in Industrial Engineering_<br /><small>_(September 2017 - May 2020)_</small>
+![image-right]({{ site.url }}{{ site.baseurl }}/images/about/upc.png){: .align-right}
+__Polytechnic University of Catalonia (UPC)__<br />_Candidate for MS in Industrial Engineering_<br /><small>_(September 2017 - May 2020)_</small>
 
-### Technical University of Darmstadt ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/TUDa.png){: .align-right}
-_Visiting student_<br /><small>_(March 2017 - August 2017)_</small>
+![image-right]({{ site.url }}{{ site.baseurl }}/images/about/TUDa.png){: .align-right}
+__Technical University of Darmstadt__<br />_Visiting student_<br /><small>_(March 2017 - August 2017)_</small>
 
-### Public University of Navarre (UPNA) ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/upna.png){: .align-right}
-_BS in Industrial Engineering_<br /><small>_(September 2013 - August 2017)_</small>
+![image-right]({{ site.url }}{{ site.baseurl }}/images/about/upna.png){: .align-right}
+__Public University of Navarre (UPNA)__<br />_BS in Industrial Engineering_<br /><small>_(September 2013 - August 2017)_</small>

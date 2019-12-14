@@ -24,9 +24,8 @@ An updated copy of my resumé can be downloaded [here]({{ site.url }}{{ site.bas
 ## Research Experience
 {: style="text-align: center;"}
 ---
-
-### Massachusetts Institute of Technology ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
-_Research Affiliate at Clinical Research Center_<br /><small>_(February 2019 - May 2020)_</small>
+ 
+__Massachusetts Institute of Technology__<br />_Research Affiliate at Clinical Research Center_<br /><small>_(February 2019 - May 2020)_</small> ![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}
 
 ### UPC's Biomedical Engineering Research Center![image-right]({{ site.url }}{{ site.baseurl }}/images/about/creb.png){: .align-right}
 _Research Intern_<br /><small>_(February 2019 - May 2020)_</small>

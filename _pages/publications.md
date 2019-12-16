@@ -13,4 +13,4 @@ header:
 
 ## In progress
 
-<small>__Biomechanical evaluation of upper limb exoskeletons in automotive assembly using EMG__<br />With K. Kolandaivelu and E.R. Edelman</small>
+<small>__Constraint diagnostics through high-dimensional models__<br />With K. Kolandaivelu and E.R. Edelman</small>

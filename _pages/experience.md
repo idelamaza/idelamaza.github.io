@@ -29,7 +29,7 @@ __Massachusetts Institute of Technology__![image-right]({{ site.url }}{{ site.ba
 
 __Research Center for Biomedical Engineering (CREB) @ UPC__![image-right]({{ site.url }}{{ site.baseurl }}/images/about/creb.png){: .align-right}<br />_Research Intern_<br /><small>_(February 2019 - May 2020)_<br />- Led biomechanics research project with industry partners (NISSAN, Meleghy Automotive) about the use of industrial exoskeletons in car manufacturing assembly lines<br />- Proved that the use of exoskeletons in the automotive sector can reduce the muscular effort of workers by up to 60%, directly impacting local regulatory policies<br />- Held roles in project management, experiment design, in-situ data collection, data pipeline implementation, and experimental outcomes analysis</small>
 {% include gallery caption="Media coverage of the project." %}
-<iframe width="200" height="80" src="https://www.youtube.com/embed/nJe3ZFv3Cyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="120" height="80" src="https://www.youtube.com/embed/nJe3ZFv3Cyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Education
 {: style="text-align: center;"}

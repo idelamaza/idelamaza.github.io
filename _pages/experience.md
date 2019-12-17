@@ -15,7 +15,7 @@ gallery:
     image_path: /images/about/press-biomec.jpg
     alt: "placeholder image 2"
     title: "BIOMEC"
-  - url: http://biomec.upc.edu/the-biomec-lab-participates-in-a-pioneering-project-to-introduce-exoskeletons-to-the-automotive-industry/
+  - url: /images/about/press-ciac.png
     image_path: /images/about/press-ciac.png
     alt: "placeholder image 3"
     title: "BIOMEC"
@@ -54,6 +54,11 @@ __Public University of Navarre (UPNA)__<br />_BS in Industrial Engineering_<br /
 {: style="text-align: center;"}
 ---
 
-## Leadership Experience
-{: style="text-align: center;"}
----
+
+
+
+
+
+
+
+

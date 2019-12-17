@@ -31,7 +31,7 @@ __Research Center for Biomedical Engineering (CREB) @ UPC__![image-right]({{ sit
 
 {% include gallery caption="Exoskeletons used in the project." %}
 
-<iframe width="120" height="80" src="https://www.youtube.com/embed/nJe3ZFv3Cyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="80" height="50" src="https://www.youtube.com/embed/nJe3ZFv3Cyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Education
 {: style="text-align: center;"}

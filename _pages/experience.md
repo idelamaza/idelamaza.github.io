@@ -9,17 +9,18 @@ header:
 gallery:
   - url: http://biomec.upc.edu/the-biomec-lab-participates-in-a-pioneering-project-to-introduce-exoskeletons-to-the-automotive-industry/
     image_path: /images/about/press-biomec.jpg
-    alt: "placeholder image 1
+    alt: "placeholder image 1"
     title: "BIOMEC"
   - url: http://biomec.upc.edu/the-biomec-lab-participates-in-a-pioneering-project-to-introduce-exoskeletons-to-the-automotive-industry/
     image_path: /images/about/press-biomec.jpg
-    alt: "placeholder image 1
+    alt: "placeholder image 2"
     title: "BIOMEC"
   - url: http://biomec.upc.edu/the-biomec-lab-participates-in-a-pioneering-project-to-introduce-exoskeletons-to-the-automotive-industry/
     image_path: /images/about/press-biomec.jpg
-    alt: "placeholder image 1
+    alt: "placeholder image 3"
     title: "BIOMEC"
 ---
+
 ## Research Experience
 {: style="text-align: center;"}
 ---

@@ -7,16 +7,15 @@ sitemap: false
 header:
   image: "/images/road.jpg"
 gallery:
-  - url: http://biomec.upc.edu/the-biomec-lab-participates-in-a-pioneering-project-to-introduce-exoskeletons-to-the-automotive-industry/
-    image_path: /images/about/press-biomec.jpg
+  - url: https://europe.nissannews.com/en-GB/releases/release-4f27d2f0c1262d16a46ddb99310045e7-nissan-spain-to-complete-pioneering-exoskeleton-project-for-production-lines?
+    image_path: /images/about/press-nissan.png
     alt: "placeholder image 1"
-    title: "BIOMEC"
+    title: "NISSAN"
   - url: http://biomec.upc.edu/the-biomec-lab-participates-in-a-pioneering-project-to-introduce-exoskeletons-to-the-automotive-industry/
     image_path: /images/about/press-biomec.jpg
     alt: "placeholder image 2"
     title: "BIOMEC"
-  - url: http://biomec.upc.edu/the-biomec-lab-participates-in-a-pioneering-project-to-introduce-exoskeletons-to-the-automotive-industry/
-    image_path: /images/about/press-biomec.jpg
+  - url: https://ciac.cat/en/news/detail/843
     alt: "placeholder image 3"
     title: "BIOMEC"
 ---

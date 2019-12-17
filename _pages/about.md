@@ -26,8 +26,15 @@ An updated copy of my resumé can be downloaded [here]({{ site.url }}{{ site.bas
 
 __Massachusetts Institute of Technology__![image-right]({{ site.url }}{{ site.baseurl }}/images/about/MITlogoblackred.jpg){: .align-right}<br />_Research Affiliate at Clinical Research Center_<br /><small>_(February 2019 - May 2020)_</small> 
 
-![image-right]({{ site.url }}{{ site.baseurl }}/images/about/creb.png){: .align-right}
-__UPC's Biomedical Engineering Research Center__<br />_Research Intern_<br /><small>_(February 2019 - May 2020)_</small>
+<small>
+- Under the supervision of Prof. Elazer Edelman and Dr. Kumaran Kolandaivelu
+- Used systems biology mathematical modeling, data science, computational statistics, ML, and precision
+medicine approaches in cardiovascular-related biomedical projects
+- Developed a mathematical model of blood coagulation under flow conditions
+- Designed, manufactured, and tested microfluidic devices for blood clotting experiments
+</small>
+
+__UPC's Biomedical Engineering Research Center__![image-right]({{ site.url }}{{ site.baseurl }}/images/about/creb.png){: .align-right}<br />_Research Intern_<br /><small>_(February 2019 - May 2020)_</small>
 
 ## Education
 {: style="text-align: center;"}

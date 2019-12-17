@@ -15,7 +15,8 @@ gallery:
     image_path: /images/about/press-biomec.jpg
     alt: "placeholder image 2"
     title: "BIOMEC"
-  - url: https://ciac.cat/en/news/detail/843
+  - url: http://biomec.upc.edu/the-biomec-lab-participates-in-a-pioneering-project-to-introduce-exoskeletons-to-the-automotive-industry/
+    image_path: /images/about/press-ciac.png
     alt: "placeholder image 3"
     title: "BIOMEC"
 ---

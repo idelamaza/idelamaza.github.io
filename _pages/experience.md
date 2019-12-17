@@ -8,13 +8,13 @@ header:
   image: "/images/road.jpg"
 gallery2:
 	- url: http://biomec.upc.edu/the-biomec-lab-participates-in-a-pioneering-project-to-introduce-exoskeletons-to-the-automotive-industry/
-	  image_path:/images/about/press_biomec.jpg
+	  image_path:/images/about/press-biomec.jpg
 	  alt: "BIOMEC" 
 	- url: http://biomec.upc.edu/the-biomec-lab-participates-in-a-pioneering-project-to-introduce-exoskeletons-to-the-automotive-industry/
-	  image_path: /images/about/press_biomec.jpg
+	  image_path: /images/about/press-biomec.jpg
 	  alt: "BIOMEC"
 	- url: http://biomec.upc.edu/the-biomec-lab-participates-in-a-pioneering-project-to-introduce-exoskeletons-to-the-automotive-industry/
-	  image_path: /images/about/press_biomec.jpg
+	  image_path: /images/about/press-biomec.jpg
 	  alt: "BIOMEC"
 
 ---

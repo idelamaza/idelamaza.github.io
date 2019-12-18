@@ -53,8 +53,8 @@ We tackle the problem using a feature extraction process focused on exploiting t
 </figure> 
 
 <figure>
-	<div style="height:400px; width:800px;">
-	  <iframe width= "900" height= "400" frameborder= "0" scrolling="yes" autosize="true" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/timeseries2.html">
+	<div style="position: relative; padding-bottom: 75%; height:0;overflow: hidden;"> 
+	  <iframe width= "100%" height= "100%" frameborder="0" scrolling="yes" id="igraph" seamless="seamless" top="0" left="0" position="absolute" src="/charts/2019-12-05-Data-Science-Bowl-2019/timeseries2.html">
 	  </iframe>
 	</div>
   <figcaption>Time series representation of the game_sessions of a certain installation_id. The annotation above certain game_session shows the number of events they comprise (notice that all Clips (green) have only one event, as there is no interaction of the player recorded).</figcaption>

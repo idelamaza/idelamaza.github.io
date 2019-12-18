@@ -33,7 +33,7 @@ This data is highly fine-grained, as multiple events might be recorded in less t
   <figcaption>A look at PBS KIDS Measure Up! app</figcaption>
 </figure> 
 
-We tackle the problem using a feature extraction process focused on exploiting the time series nature of the data and the application of different Optimal Classification Tree ([Bertsimas & Dunn, 2019](Bertsimas & Dunn, 2019)) models in order to both achieve a high predictive power and gain interpretable insights. Our models allow us, at the moment this report is being written, to achieve a predictive power better than 95% of the best models submitted in the competition and to understand which factors drive the children’s performance. Additionally, we provide two ideas of how this work could continue leveraging the potential of optimization-based approaches.
+We tackle the problem using a feature extraction process focused on exploiting the time series nature of the data and the application of different Optimal Classification Tree ([Bertsimas & Dunn, 2019](#bertsimas2019)) models in order to both achieve a high predictive power and gain interpretable insights. Our models allow us, at the moment this report is being written, to achieve a predictive power better than 95% of the best models submitted in the competition and to understand which factors drive the children’s performance. Additionally, we provide two ideas of how this work could continue leveraging the potential of optimization-based approaches.
 
 ## Data Overview
 
@@ -57,5 +57,5 @@ We tackle the problem using a feature extraction process focused on exploiting t
 
 ## References
 
-<a name="Bertsimas & Dunn, 2019"></a>
+<a name="bertsimas2019"></a>
 Bertsimas, D., & Dunn, J. (2019). _Machine learning under a modern optimization lens._ Belmont, MA: Dynamic Ideas LLC. Available at: [https://www.dynamic-ideas.com/books/machine-learning-under-a-modern-optimization-lens](https://www.dynamic-ideas.com/books/machine-learning-under-a-modern-optimization-lens).

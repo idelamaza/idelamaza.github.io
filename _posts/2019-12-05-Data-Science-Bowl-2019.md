@@ -113,12 +113,12 @@ Tables 1 and 2 show the training and out-of-sample performance of the OCT and OC
 By looking at the tables we can immediately appreciate the dominance of OCT-H models regardless of the use of the _autobalance_ attribute. The _autobalance_ feature works as expected, models without it perform better but that entails completely missing a class. This can be observed in figures [A1](#appendix) and [A2](#appendix) from the appendix, which do not have any leaf predicting class 2 (kids who solved the assessment in the second attempt).
 
 <figure class="align-center">
-  <img width = 100 src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/training_performance.png" alt="">
+  <img width = "100" src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/training_performance.png" alt="">
   <figcaption>Figure 6. Training performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
 </figure> 
 
 <figure class="align-center">
-  <img width = 100 src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/out_of_sample_performance.png" alt="">
+  <img width = "100" src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/out_of_sample_performance.png" alt="">
   <figcaption>Figure 7. Out-of-sample performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
 </figure> 
 

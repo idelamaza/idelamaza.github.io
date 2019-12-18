@@ -20,7 +20,7 @@ title                    : "Iñigo de la Maza"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Iñigo de la Maza"
-description              : #"Data Science Portfolio"
+description              : "Data Science Portfolio"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,12 +109,12 @@ analytics:
 author:
   name             : "Iñigo de la Maza"
   avatar           : "/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Science Portfolio"
+  bio              : #"Data Science Portfolio"
   location         : "Boston, MA"
   email            : "delamaza@mit.edu"
   cv               : "/files/Resume_delaMaza.pdf"
   linkedin         : "i-delamaza"
-  #github           : "https://github.com/inigodelamaza"
+  #github           : "inigodelamaza"
   
   #links:
   #  - label: "LinkedIn"

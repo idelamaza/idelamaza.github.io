@@ -99,17 +99,26 @@ The process of extracting features to train the machine learning model is time-c
 
 ## Optimal Classification Trees
 
+Since the task is to predict the accuracy group of a player before taking an assessment, in this work we focus onoptimization-based classification models, namely Optimal Classification Trees (OCT). By means of Julia’s packageIAI, in this section we train several OCT models and analyze their performance. All the code that allows us to obtainthe performance results from this section is presented in the second and third notebooks appended at the end of thisreport.
+
 ### Models
+
+Understanding the tradeoff between interpretability and predictive power they have, in this work we consider OCTmodels with both parallel and hyperplane splits in order to gain insights on what makes users perform well and to obtainmodels capable of reaching high scores in the competition, respectively.5
+We understand the importance of training models with an appropriate selection of hyperparameters, therefore we carryout hyperparameter tuning tasks with a validation set before evaluating the performance of each model. In the case ofOCT with parallel splits, we create a grid that considers three different values for themaximum depthparameter (5, 10,and 15) and three different values for theminbucketparameter (1, 5, and 10). In the case of OCT-H, in order not tocompromise runtime given the size of the dataset, we choose to fix theminbucketparameter to 1 and train two modelswith amaximum depthof 2 and 3, respectively. Since OCT-H considers hyperplane splits, and we decide not to enforceany sparsity constraint, choosing any other depth value beyond the selected ones does not provide impactful predictivepower, degrades the interpretability of these models, and unnecessarily increases runtime.All models are trained using theOptimalTreeClassifierwith parallelization and using the misclassification erroras criterion to determine the best combination of hyperparameters. Additionally, we decide to duplicate the numberof analyses and repeat both the OCT and OCT-H cases choosing to equally prioritize the 4 classes by means of theautobalanceattribute. The rationale behind this decision can be easily understood by looking at figures 5 and 6 in theAppendix. We cover the details of these figures in the coming section but the reader can notice that whenautobalanceis not used there is no leaf that predicts class 2. This is corrected when enforcing an equal importance among classes,helping understand the relationship between players’ behaviour and this class.
 
 ### Results - Predictive power
 
-<figure class="align-center" style="height: 100px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/training_performance.png" alt="">
+Tables 1 and 2 show the training and out-of-sample performance of the OCT and OCT-H models with and without theautobalanceattribute. In this work we analyze the performance using two different metrics: on one hand we considerthe accuracy, which takes into account the proportion of correctly classified labels; on the other hand we use the Cohen’skappa coefficient with quadratic weights, which is the official metric of the competition and is defined as \\[\kappa = 1 - \frac{\sum_{i=1}^k\sum_{j=1}^kw_{ij}x_{ij}}{\sum_{i=1}^k\sum_{j=1}^kw_{ij}m_{ij}}\\] where \\(x_{ij}\\) represents the number of datapoints from class \\(i\\) that have been classified as class \\(j\\), \\(m_{ij}\\) is the expected number of datapoints from class \\(i\\) that have been classified as class \\(j\\), and finally \\(w_{ij}\\) is a weight factor defined as \\[w_{ij} = 1 - \frac{i^2}{(j-i)^2}\\]
+
+By looking at the tables we can immediately appreciate the dominance of OCT-H models regardless of the use of the _autobalance_ attribute. The _autobalance_ feature works as expected, models without it perform better but that entails completely missing a class. This can be observed in figures [A1](#appendix) and [A2](#appendix) from the appendix, which do not have any leaf predicting class 2 (kids who solved the assessment in the second attempt).
+
+<figure class="align-center">
+  <img width = 100 src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/training_performance.png" alt="">
   <figcaption>Figure 6. Training performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
 </figure> 
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/out_of_sample_performance.png" alt="">
+  <img width = 100 src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/out_of_sample_performance.png" alt="">
   <figcaption>Figure 7. Out-of-sample performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
 </figure> 
 
@@ -133,7 +142,19 @@ The process of extracting features to train the machine learning model is time-c
 
 ## Conclusions and Future Work
 
+## <a name="appendix"></a>Appendix
 
+<figure>
+  <iframe width= "100%" height= "400" frameborder= "0" scrolling="yes" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_no_autobalance.html">
+  </iframe>
+  <figcaption>Figure A1. (interactive) OCT without the autobalance setting.</figcaption>
+</figure>
+
+<figure>
+  <iframe width= "100%" height= "400" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_autobalance.html">
+  </iframe>
+  <figcaption>Figure A2. (interactive) OCT with autobalance.</figcaption>
+</figure>
 
 ## References
 

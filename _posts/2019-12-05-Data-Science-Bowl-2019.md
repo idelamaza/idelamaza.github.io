@@ -53,7 +53,7 @@ We tackle the problem using a feature extraction process focused on exploiting t
 </figure> 
 
 <figure>
-	<div style="position: relative; padding-bottom: 0%; height:400; overflow: hidden;"> 
+	<div style="position: relative; padding-bottom: 0%;width: 100%; height:400px; overflow: hidden;"> 
 	  <iframe width= "100%" height= "100%" frameborder="0" scrolling="yes" id="igraph" seamless="seamless" top="0" left="0" position="absolute" src="/charts/2019-12-05-Data-Science-Bowl-2019/timeseries2.html">
 	  </iframe>
 	</div>

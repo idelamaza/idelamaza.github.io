@@ -32,6 +32,6 @@ We tackle the problem using a feature extraction process focused on exploiting t
 
 ## Conclusions and Future Work
 
-##References
+## References
 
 Bertsimas, D., & Dunn, J. (2019). _Machine learning under a modern optimization lens._ Belmont, MA: Dynamic Ideas LLC. Available at: [https://www.dynamic-ideas.com/books/machine-learning-under-a-modern-optimization-lens](https://www.dynamic-ideas.com/books/machine-learning-under-a-modern-optimization-lens).

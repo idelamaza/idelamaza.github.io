@@ -55,7 +55,7 @@ We tackle the problem using a feature extraction process focused on exploiting t
 ## Optimal Classification Trees
 
 <figure>
-  <iframe width= "100%" height= "100%" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_no_autobalance.html">
+  <iframe width= "100%" height= "500" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_no_autobalance.html">
   </iframe>
 </figure>
 

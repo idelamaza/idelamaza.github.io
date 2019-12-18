@@ -59,6 +59,11 @@ We tackle the problem using a feature extraction process focused on exploiting t
   </iframe>
 </figure>
 
+<figure>
+  <iframe width= "100%" height= "800" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_autobalance.html">
+  </iframe>
+</figure>
+
 ## Additional optimization-based approaches
 
 

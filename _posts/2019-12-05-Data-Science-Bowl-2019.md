@@ -12,7 +12,7 @@ header:
   caption: "Photo by [Kelly Sikkema](https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)"
 ---
 
-This is worked served as the final project for MIT course 15.095: _Machine Learning Under a Modern Optimization Lens_, by Prof. Dimitris Bertsimas. A printer-friendly version can be downloaded [here]({{ site.url }}{{ site.baseurl }}/files/2019-12-05-Data-Science-Bowl-2019.pdf). All the used code can be found at [GitHub](https://github.com/inigodelamaza). Special thanks to my colleague and co-author of the project, [Juan José Garau](http://systemarchitect.mit.edu/students.php#garau).
+This is work was presented as the final project for MIT course 15.095: _Machine Learning Under a Modern Optimization Lens_, by Prof. Dimitris Bertsimas. A printer-friendly version can be downloaded [here]({{ site.url }}{{ site.baseurl }}/files/2019-12-05-Data-Science-Bowl-2019.pdf). All the used code can be found at [GitHub](https://github.com/inigodelamaza). Special thanks to my colleague and co-author of the project, [Juan José Garau](http://systemarchitect.mit.edu/students.php#garau).
 
 This project comprises the study of the application of predictive, optimization-based classification algorithms to a real-world task. Looking towards that aim, an online data science competition is the perfect medium due to both the availability of high-quality data, and the possibility of comparing different models and outcomes with the ones achieved by other participants using conventional heuristic methods. The online platform Kaggle is one of the most popular online competition organizer and 2019's edition of the Data Science Bowl® is a perfect fit for the objectives of thisproject.
 

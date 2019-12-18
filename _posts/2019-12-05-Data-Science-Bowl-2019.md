@@ -35,27 +35,39 @@ We tackle the problem using a feature extraction process focused on exploiting t
 
 ## Data Overview
 
+The dataset provided by the competition is primarily composed of all the game analytics the PBS KIDS Measure UP! app gathers anonymously from its users.  In this app, children navigate through a map and complete various levels, which may be activities, video clips, games, or assessments (each of them considered a different game_session, and its nature expressed as ``type``).  
+
+Each assessment is designed to test a child’s comprehension of a certain set of measurement-related skills. There are five assessments: _Bird Measurer_, _Cart Balancer_, _Cauldron Filler_, _Chest Sorter_, and _Mushroom Sorter_. 
+
+### Data volume
+
+To help the reader understand the data, Figure 1 shows the tree-like structure of the dataset. Each application install is represented by an ``installation_id``, which can be considered to map to one single user. The training set provides the full history of gameplay data of 17,000 ``installation_ids``, while the test set has information for 1,000 players.  Moreover, each ``installation_id`` has multiple ``game_sessions`` of different types (activities, games, assessments...). In total there are around 300,000 ``game_sessions`` in the training set and almost 30,000 in thetest set. 
+
+Finally, each ``game_session`` is composed by several events that represent every possible interaction between the user and the app. These events are identified with a unique ID (``event_id``), and have associated data such as screen coordinates, timestamps, durations, etc, depending on the nature of the event. In total, there are around 11.3M events in the training set and 1.1M in the test set. We can conclude the dimensionality of the problem is high and the data is presented in the form of dependencies and __timeseries__.
+
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/data_overview.png" alt="">
-  <figcaption>Dataset structure.</figcaption>
+  <figcaption>Figure 1. Dataset structure.</figcaption>
 </figure> 
+
+### Classification labels
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/label_dist.png" alt="">
-  <figcaption>Prediction label distribution.</figcaption>
+  <figcaption>Figure 2. Prediction label distribution.</figcaption>
 </figure> 
 
 ## Feature Engineering
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/feat_eng.png" alt="">
-  <figcaption>Instance definition approach.</figcaption>
+  <figcaption>Figure 3. Instance definition approach.</figcaption>
 </figure> 
 
 <figure>
   <iframe width= "800" height= "500" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/timeseries.html">
   </iframe>
-  <figcaption>Time series representation of the game_sessions of a certain installation_id. The annotation above certain game_session shows the number of events they comprise (notice that all Clips (green) have only one event, as there is no interaction of the player recorded) (interactive).</figcaption>
+  <figcaption>Figure 4. (interactive) Time series representation of the game_sessions of a certain installation_id. The annotation above certain game_session shows the number of events they comprise (notice that all Clips (green) have only one event, as there is no interaction of the player recorded).</figcaption>
 </figure>
 
 ## Optimal Classification Trees
@@ -63,13 +75,13 @@ We tackle the problem using a feature extraction process focused on exploiting t
 <figure>
   <iframe width= "100%" height= "400" frameborder= "0" scrolling="yes" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_no_autobalance.html">
   </iframe>
-  <figcaption>OCT without the autobalance setting (interactive).</figcaption>
+  <figcaption>Figure 5. (interactive) OCT without the autobalance setting.</figcaption>
 </figure>
 
 <figure>
   <iframe width= "100%" height= "400" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_autobalance.html">
   </iframe>
-  <figcaption>OCT with autobalance (interactive).</figcaption>
+  <figcaption>Figure 6. (interactive) OCT with autobalance.</figcaption>
 </figure>
 
 ## Additional optimization-based approaches

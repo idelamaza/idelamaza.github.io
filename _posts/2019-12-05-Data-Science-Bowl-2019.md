@@ -12,26 +12,49 @@ header:
   caption: "Photo by [Kelly Sikkema](https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)"
 ---
 
-This is work was presented as the course final project for MIT 15.095: _Machine Learning Under a Modern Optimization Lens_, by Prof. Dimitris Bertsimas. A printer-friendly version can be downloaded [here]({{ site.url }}{{ site.baseurl }}/files/2019-12-05-Data-Science-Bowl-2019.pdf). All the used code can be found at [GitHub](https://github.com/inigodelamaza). Special thanks to my colleague and co-author of the project, [Juan José Garau](http://systemarchitect.mit.edu/students.php#garau).
+This work was presented as the course final project for MIT 15.095: _Machine Learning Under a Modern Optimization Lens_, by Prof. Dimitris Bertsimas. A printer-friendly version can be downloaded [here]({{ site.url }}{{ site.baseurl }}/files/2019-12-05-Data-Science-Bowl-2019.pdf). All the used code can be found at [GitHub](https://github.com/inigodelamaza). Special thanks to my colleague and co-author of the project, [Juan José Garau](http://systemarchitect.mit.edu/students.php#garau).
 
-The project comprises the study of the application of predictive, optimization-based classification algorithms to a real-world task. Looking towards that aim, an online data science competition is the perfect medium due to both the availability of high-quality data, and the possibility of comparing different models and outcomes with the ones achieved by other participants using conventional heuristic methods. The online platform Kaggle is one of the most popular online competition organizer and 2019's edition of the Data Science Bowl® is a perfect fit for the objectives of thisproject.
+The project comprises the study of the application of predictive, optimization-based classification algorithms to a real-world task. Looking towards that aim, an online data science competition is the perfect medium due to both the availability of high-quality data, and the possibility of comparing different models and outcomes with the ones achieved by other participants using conventional heuristic methods. The online platform Kaggle is one of the most popular online competition organizer and 2019's edition of the [Data Science Bowl®](https://www.kaggle.com/c/data-science-bowl-2019/overview "Data Science Bowl®")(DSB) is a perfect fit for the objectives of this project.
 
 ## Introduction
 
-Online apps are a key element in the democratization of education all over the world, specially when it comes to early childhood education. Developing software focused to improve how kids learn is essential to make an impact on the users’ abilities and skills. In this work, an optimization-based approach to understand the relationship between the educational content of the PBS KIDS Measure UP! app and how effectively its users learn is presented.
+Online apps are a key element in the democratization of education all over the world, specially when it comes to early childhood education. Developing software focused to improve how kids learn is essential to make an impact on the users’ abilities and skills. In this year's edition of the DSB, company PBS KIDS, a trusted name in early childhood education (3-5 years old) for decades, aims to gain insights into how media and game mobile apps can help children learn important skills for success in school and life. In this work, an optimization-based approach to understand the relationship between the educational content of the PBS KIDS Measure UP! app and how effectively its users learn is presented.
 
-We tackle the problem using a feature extraction process focused on exploiting the time series nature of the data and the application of different Optimal Classification Tree models in order to both achieve a high predictive power and gain interpretable insights. Our models allow us, at the moment this report is being written, to achieve a predictive power better than 95% of the best models submitted in the competition and to understand which factors drive the children’s performance. Additionally, we provide two ideas of how this work could continue leveraging the potential of optimization-based approaches.
+### Problem statement
+
+The app has a diverse range of educational material including videos, assessments, activities, and games. These are designed to help kids learn different measurement concepts such as weight, capacity, or length. The DSB challenge focuses on predicting players’ assessment performance based on the information the app gathers on each game session. Every detailed interaction a player has with the app is recorded in the form of an event, including things like mediacontent display, touchscreen coordinates, and assessment answers. 
+
+This data is highly fine-grained, as multiple events might be recorded in less than one second. With this data, the competition participants must predict the performance ofcertain assessments whose outcomes are unknown, given the history of a player up to that assessment. Based on the prediction, the goal is to __classify__ the player into one of four performance groups, which represent how many attempts takes a kid to successfully complete the assessment. The aim of the challenge is to help PBS KIDS discover important relationships between engagement with high-quality educational media and learning processes, by understanding what influences the most on the childrens’ performance and learning rate.
+
+<figure class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/pbs-app.png" alt="">
+  <figcaption>A look at PBS KIDS Measure Up! app</figcaption>
+</figure> 
+
+
+We tackle the problem using a feature extraction process focused on exploiting the time series nature of the data and the application of different Optimal Classification Tree ([Bertsimas & Dunn, 2019](Bertsimas & Dunn, 2019)) models in order to both achieve a high predictive power and gain interpretable insights. Our models allow us, at the moment this report is being written, to achieve a predictive power better than 95% of the best models submitted in the competition and to understand which factors drive the children’s performance. Additionally, we provide two ideas of how this work could continue leveraging the potential of optimization-based approaches.
 
 ## Data Overview
 
+
+
 ## Feature Engineering
+
+
 
 ## Optimal Classification Trees
 
+
+
 ## Additional optimization-based approaches
+
+
 
 ## Conclusions and Future Work
 
+
+
 ## References
 
+<a name="Bertsimas & Dunn, 2019"></a>
 Bertsimas, D., & Dunn, J. (2019). _Machine learning under a modern optimization lens._ Belmont, MA: Dynamic Ideas LLC. Available at: [https://www.dynamic-ideas.com/books/machine-learning-under-a-modern-optimization-lens](https://www.dynamic-ideas.com/books/machine-learning-under-a-modern-optimization-lens).

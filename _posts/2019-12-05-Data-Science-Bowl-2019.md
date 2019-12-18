@@ -31,7 +31,6 @@ This data is highly fine-grained, as multiple events might be recorded in less t
   <figcaption>A look at PBS KIDS Measure Up! app</figcaption>
 </figure> 
 
-
 We tackle the problem using a feature extraction process focused on exploiting the time series nature of the data and the application of different Optimal Classification Tree ([Bertsimas & Dunn, 2019](Bertsimas & Dunn, 2019)) models in order to both achieve a high predictive power and gain interpretable insights. Our models allow us, at the moment this report is being written, to achieve a predictive power better than 95% of the best models submitted in the competition and to understand which factors drive the children’s performance. Additionally, we provide two ideas of how this work could continue leveraging the potential of optimization-based approaches.
 
 ## Data Overview

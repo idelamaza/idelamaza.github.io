@@ -58,8 +58,6 @@ We tackle the problem using a feature extraction process focused on exploiting t
   <figcaption>Time series representation of the game_sessions of a certain installation_id. The annotation above certain game_session shows the number of events they comprise (notice that all Clips (green) have only one event, as there is no interaction of the player recorded).</figcaption>
 </figure>
 
-
-
 ## Optimal Classification Trees
 
 <figure>

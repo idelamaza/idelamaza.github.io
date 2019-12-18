@@ -28,7 +28,7 @@ This data is highly fine-grained, as multiple events might be recorded in less t
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/pbs-app.png" alt="">
-  <figcaption>A look at PBS KIDS Measure Up! app.</figcaption>
+  <figcaption>Figure 1. A look at PBS KIDS Measure Up! app.</figcaption>
 </figure> 
 
 We tackle the problem using a feature extraction process focused on exploiting the time series nature of the data and the application of different Optimal Classification Tree ([Bertsimas & Dunn, 2019](#bertsimas2019)) models in order to both achieve a high predictive power and gain interpretable insights. Additionally, we provide two ideas of how this work could continue leveraging the potential of optimization-based approaches.
@@ -41,13 +41,13 @@ Each assessment is designed to test a child’s comprehension of a certain set o
 
 ### Data volume
 
-To help the reader understand the data, Figure 1 shows the tree-like structure of the dataset. Each application install is represented by an ``installation_id``, which can be considered to map to one single user. The training set provides the full history of gameplay data of 17,000 ``installation_ids``, while the test set has information for 1,000 players.  Moreover, each ``installation_id`` has multiple ``game_sessions`` of different types (activities, games, assessments...). In total there are around 300,000 ``game_sessions`` in the training set and almost 30,000 in thetest set. 
+To help the reader understand the data, Figure 2 shows the tree-like structure of the dataset. Each application install is represented by an ``installation_id``, which can be considered to map to one single user. The training set provides the full history of gameplay data of 17,000 ``installation_ids``, while the test set has information for 1,000 players.  Moreover, each ``installation_id`` has multiple ``game_sessions`` of different types (activities, games, assessments...). In total there are around 300,000 ``game_sessions`` in the training set and almost 30,000 in thetest set. 
 
 Finally, each ``game_session`` is composed by several events that represent every possible interaction between the user and the app. These events are identified with a unique ID (``event_id``), and have associated data such as screen coordinates, timestamps, durations, etc, depending on the nature of the event. In total, there are around 11.3M events in the training set and 1.1M in the test set. We can conclude the dimensionality of the problem is high and the data is presented in the form of dependencies and __timeseries__.
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/data_overview.png" alt="">
-  <figcaption>Figure 1. Dataset structure.</figcaption>
+  <figcaption>Figure 2. Dataset structure.</figcaption>
 </figure> 
 
 ### Classification labels
@@ -59,11 +59,11 @@ As previously introduced, the output of the model must be a prediction of the pe
 - ``accuracy_group1`` : the assessment was solved after three or more attempts
 - ``accuracy_group0`` : the assessment was was never solved
 
-Figure 2 shows the distribution of the four possible ``accuracy_groups`` across the five assessments of the app. Notice that there are clearly three assessments that seem to be easier _a priori_ as there is a majority of first-attempt correct answers, whereas one them has pretty much evenly distributed labels (_Bird Measurer_) and another one (_Chest Sorter_) seems to be more difficult than the others.
+Figure 3 shows the distribution of the four possible ``accuracy_groups`` across the five assessments of the app. Notice that there are clearly three assessments that seem to be easier _a priori_ as there is a majority of first-attempt correct answers, whereas one them has pretty much evenly distributed labels (_Bird Measurer_) and another one (_Chest Sorter_) seems to be more difficult than the others.
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/label_dist.png" alt="">
-  <figcaption>Figure 2. Prediction label distribution.</figcaption>
+  <figcaption>Figure 3. Prediction label distribution.</figcaption>
 </figure> 
 
 ### Training and test sets differences
@@ -76,13 +76,13 @@ However, in many cases, information from previous complete assessments is given.
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/feat_eng.png" alt="">
-  <figcaption>Figure 3. Instance definition approach.</figcaption>
+  <figcaption>Figure 4. Instance definition approach.</figcaption>
 </figure> 
 
 <figure>
   <iframe width= "800" height= "500" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/timeseries.html">
   </iframe>
-  <figcaption>Figure 4. (interactive) Time series representation of the game_sessions of a certain installation_id. The annotation above certain game_session shows the number of events they comprise (notice that all Clips (green) have only one event, as there is no interaction of the player recorded).</figcaption>
+  <figcaption>Figure 5. (interactive) Time series representation of the game_sessions of a certain installation_id. The annotation above certain game_session shows the number of events they comprise (notice that all Clips (green) have only one event, as there is no interaction of the player recorded).</figcaption>
 </figure>
 
 ## Optimal Classification Trees
@@ -90,13 +90,13 @@ However, in many cases, information from previous complete assessments is given.
 <figure>
   <iframe width= "100%" height= "400" frameborder= "0" scrolling="yes" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_no_autobalance.html">
   </iframe>
-  <figcaption>Figure 5. (interactive) OCT without the autobalance setting.</figcaption>
+  <figcaption>Figure 6. (interactive) OCT without the autobalance setting.</figcaption>
 </figure>
 
 <figure>
   <iframe width= "100%" height= "400" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_autobalance.html">
   </iframe>
-  <figcaption>Figure 6. (interactive) OCT with autobalance.</figcaption>
+  <figcaption>Figure 7. (interactive) OCT with autobalance.</figcaption>
 </figure>
 
 ## Additional optimization-based approaches

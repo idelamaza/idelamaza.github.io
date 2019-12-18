@@ -54,7 +54,7 @@ We tackle the problem using a feature extraction process focused on exploiting t
 
 <figure>
 	<div class="iframe-container"> 
-	  <iframe width= "100%" height= "100%" frameborder="0" scrolling="yes" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/timeseries.html">
+	  <iframe scrolling="yes" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/timeseries.html">
 	  </iframe>
 	</div>
   <figcaption>Time series representation of the game_sessions of a certain installation_id. The annotation above certain game_session shows the number of events they comprise (notice that all Clips (green) have only one event, as there is no interaction of the player recorded).</figcaption>

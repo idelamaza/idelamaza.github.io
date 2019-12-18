@@ -81,14 +81,14 @@ The process of extracting features to train the machine learning model is time-c
 <figure>
   <iframe width= "800" height= "500" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/timeseries.html">
   </iframe>
-  <figcaption>Figure 5. (interactive) Time series representation of the game_sessions of a certain installation_id. The annotation above certain game_session shows the number of events they comprise (notice that all Clips (green) have only one event, as there is no interaction of the player recorded).</figcaption>
+  <figcaption>Figure 4. (interactive) Time series representation of the game_sessions of a certain installation_id. The annotation above certain game_session shows the number of events they comprise (notice that all Clips (green) have only one event, as there is no interaction of the player recorded).</figcaption>
 </figure>
 
 ### Training instance definition
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/feat_eng.png" alt="">
-  <figcaption>Figure 4. Instance definition approach.</figcaption>
+  <figcaption>Figure 5. Instance definition approach.</figcaption>
 </figure> 
 
 ### Feature definition
@@ -103,14 +103,14 @@ The process of extracting features to train the machine learning model is time-c
 
 ### Results - Predictive power
 
-<figure class="align-center">
+<figure class="align-center" style="height: 100px">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/training_performance.png" alt="">
-  <figcaption>Figure 5. Training performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
+  <figcaption>Figure 6. Training performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
 </figure> 
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/out_of_sample_performance.png" alt="">
-  <figcaption>Figure 6. Out-of-sample performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
+  <figcaption>Figure 7. Out-of-sample performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
 </figure> 
 
 \\[ a^2 = b^2 \\] 
@@ -118,13 +118,13 @@ The process of extracting features to train the machine learning model is time-c
 <figure>
   <iframe width= "100%" height= "400" frameborder= "0" scrolling="yes" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_no_autobalance.html">
   </iframe>
-  <figcaption>Figure 6. (interactive) OCT without the autobalance setting.</figcaption>
+  <figcaption>Figure 8. (interactive) OCT without the autobalance setting.</figcaption>
 </figure>
 
 <figure>
   <iframe width= "100%" height= "400" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_autobalance.html">
   </iframe>
-  <figcaption>Figure 7. (interactive) OCT with autobalance.</figcaption>
+  <figcaption>Figure 9. (interactive) OCT with autobalance.</figcaption>
 </figure>
 
 ## Additional optimization-based approaches

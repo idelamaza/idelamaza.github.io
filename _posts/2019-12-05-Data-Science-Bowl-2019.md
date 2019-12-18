@@ -31,19 +31,33 @@ This data is highly fine-grained, as multiple events might be recorded in less t
   <figcaption>A look at PBS KIDS Measure Up! app</figcaption>
 </figure> 
 
-We tackle the problem using a feature extraction process focused on exploiting the time series nature of the data and the application of different Optimal Classification Tree ([Bertsimas & Dunn, 2019](#bertsimas2019)) models in order to both achieve a high predictive power and gain interpretable insights. Our models allow us, at the moment this report is being written, to achieve a predictive power better than 95% of the best models submitted in the competition and to understand which factors drive the children’s performance. Additionally, we provide two ideas of how this work could continue leveraging the potential of optimization-based approaches.
+We tackle the problem using a feature extraction process focused on exploiting the time series nature of the data and the application of different Optimal Classification Tree ([Bertsimas & Dunn, 2019](#bertsimas2019)) models in order to both achieve a high predictive power and gain interpretable insights. Additionally, we provide two ideas of how this work could continue leveraging the potential of optimization-based approaches.
 
 ## Data Overview
 
+<figure class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/data_overview.png" alt="">
+  <figcaption>Dataset structure</figcaption>
+</figure> 
 
+<figure class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/label_dist.png" alt="">
+  <figcaption>Prediction label distribution</figcaption>
+</figure> 
 
 ## Feature Engineering
 
-
+<figure class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/feat_eng.png" alt="">
+  <figcaption>Training instance definition approach</figcaption>
+</figure> 
 
 ## Optimal Classification Trees
 
-
+<figure>
+  <iframe width= "100%" height= "100%" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_no_autobalance.html">
+  </iframe>
+</figure>
 
 ## Additional optimization-based approaches
 

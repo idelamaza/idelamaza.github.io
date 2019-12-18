@@ -35,9 +35,10 @@ We tackle the problem using a feature extraction process focused on exploiting t
 
 ## Data Overview
 
-The dataset provided by the competition is primarily composed of all the game analytics the PBS KIDS Measure UP! app gathers anonymously from its users.  In this app, children navigate through a map and complete various levels, which may be activities, video clips, games, or assessments (each of them considered a different game_session, and its nature expressed as ``type``).  
+The dataset provided by the competition is primarily composed of all the game analytics the PBS KIDS Measure UP! app gathers anonymously from its users. In this app, children navigate through a map and complete various levels, which may be activities, video clips, games, or assessments (each of them considered a different ``game_session``, and its nature expressed as ``type``).  
 
 Each assessment is designed to test a child’s comprehension of a certain set of measurement-related skills. There are five assessments: _Bird Measurer_, _Cart Balancer_, _Cauldron Filler_, _Chest Sorter_, and _Mushroom Sorter_. 
+
 
 ### Data volume
 
@@ -52,10 +53,25 @@ Finally, each ``game_session`` is composed by several events that represent ever
 
 ### Classification labels
 
+As previously introduced, the output of the model must be a prediction of the performance of the children in a particular assessment, in the form of a classification. The model should select one performance group out of four possible ``accuracy_groups``. The groups are numbered from 0 to 3 and are defined as follows:
+
+- ``accuracy_group3`` : the assessment was solved on the first attempt
+- ``accuracy_group2`` : the assessment was solved on the second attempt
+- ``accuracy_group1`` : the assessment was solved after three or more attempts
+- ``accuracy_group0`` : the assessment was was never solved
+
+Figure 2 shows the distribution of the four possible ``accuracy_groups`` across the five assessments of the app. Notice that there are clearly three assessments that seem to be easier _a priori_ as there is a majority of first-attempt correct answers, whereas one them has pretty much evenly distributed labels (_Bird Measurer_) and another one (_Chest Sorter_) seems to be more difficult than the others.
+
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/label_dist.png" alt="">
   <figcaption>Figure 2. Prediction label distribution.</figcaption>
 </figure> 
+
+### Training and test sets differences
+
+Both training and test sets provided by the competition have similar structure in terms of the amount of information provided for each recorded event. The main difference is that all the information for each user (``installation_id``) in the test set stops at the beginning of an assessment, whose outcome is meant to be predicted. 
+
+However, in many cases, information from previous complete assessments is given. Every ``installation_id`` in the test has at least one assessment (the one to be labeled by the model), whereas many ``installation_id`` from the training set do not have any, and therefore have been removed from the dataset because they do not allow to generate any label for the training process. This leads to a major data volume decrease, as only 4242 ``installation_id`` out of the 17,000 original ones can be used.
 
 ## Feature Engineering
 

@@ -43,7 +43,7 @@ Each assessment is designed to test a child’s comprehension of a certain set o
 
 To help the reader understand the data, Figure 2 shows the tree-like structure of the dataset. Each application install is represented by an ``installation_id``, which can be considered to map to one single user. The training set provides the full history of gameplay data of 17,000 ``installation_ids``, while the test set has information for 1,000 players.  Moreover, each ``installation_id`` has multiple ``game_sessions`` of different types (activities, games, assessments...). In total there are around 300,000 ``game_sessions`` in the training set and almost 30,000 in thetest set. 
 
-Finally, each ``game_session`` is composed by several events that represent every possible interaction between the user and the app. These events are identified with a unique ID (``event_id``), and have associated data such as screen coordinates, timestamps, durations, etc, depending on the nature of the event. In total, there are around 11.3M events in the training set and 1.1M in the test set. We can conclude the dimensionality of the problem is high and the data is presented in the form of dependencies and __timeseries__.
+Finally, each ``game_session`` is composed by several events that represent every possible interaction between the user and the app. These events are identified with a unique ID (``event_id``), and have associated data such as screen coordinates, timestamps, durations, etc, depending on the nature of the event. In total, there are around 11.3M events in the training set and 1.1M in the test set. We can conclude the dimensionality of the problem is high and the data is presented in the form of dependencies and __time series__.
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/data_overview.png" alt="">
@@ -74,10 +74,9 @@ However, in many cases, information from previous complete assessments is given.
 
 ## Feature Engineering
 
-<figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/feat_eng.png" alt="">
-  <figcaption>Figure 4. Instance definition approach.</figcaption>
-</figure> 
+The process of extracting features to train the machine learning model is time-consuming and challenging in this specific competition. Not only the provided data is in the form of a time series, but it also has a large amount of unnecessary information that needs to be filtered. In this section the process of transitioning from the original dataset to a dataset suitable to make predictions upon is explained.
+
+### Structuring data as time series
 
 <figure>
   <iframe width= "800" height= "500" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/timeseries.html">
@@ -85,7 +84,36 @@ However, in many cases, information from previous complete assessments is given.
   <figcaption>Figure 5. (interactive) Time series representation of the game_sessions of a certain installation_id. The annotation above certain game_session shows the number of events they comprise (notice that all Clips (green) have only one event, as there is no interaction of the player recorded).</figcaption>
 </figure>
 
+### Training instance definition
+
+<figure class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/feat_eng.png" alt="">
+  <figcaption>Figure 4. Instance definition approach.</figcaption>
+</figure> 
+
+### Feature definition
+
+#### Assessment-related features
+
+#### Player-related features
+
 ## Optimal Classification Trees
+
+### Models
+
+### Results - Predictive power
+
+<figure class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/training_performance.png" alt="">
+  <figcaption>Figure 5. Training performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
+</figure> 
+
+<figure class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/out_of_sample_performance.png" alt="">
+  <figcaption>Figure 6. Out-of-sample performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
+</figure> 
+
+\\[ a^2 = b^2 \\] 
 
 <figure>
   <iframe width= "100%" height= "400" frameborder= "0" scrolling="yes" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_no_autobalance.html">

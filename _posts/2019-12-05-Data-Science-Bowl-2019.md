@@ -99,12 +99,17 @@ The process of extracting features to train the machine learning model is time-c
 
 ## Optimal Classification Trees
 
-Since the task is to predict the accuracy group of a player before taking an assessment, in this work we focus onoptimization-based classification models, namely Optimal Classification Trees (OCT). By means of Julia’s packageIAI, in this section we train several OCT models and analyze their performance. All the code that allows us to obtainthe performance results from this section is presented in the second and third notebooks appended at the end of thisreport.
+Since the task is to predict the accuracy group of a player before taking an assessment, in this work we focus on optimization-based classification models, namely Optimal Classification Trees (OCT). By means of Julia’s package [Interpretable AI](https://docs.interpretable.ai/) (IAI), in this section we train several OCT models and analyze their performance.
 
 ### Models
 
-Understanding the tradeoff between interpretability and predictive power they have, in this work we consider OCTmodels with both parallel and hyperplane splits in order to gain insights on what makes users perform well and to obtainmodels capable of reaching high scores in the competition, respectively.5
-We understand the importance of training models with an appropriate selection of hyperparameters, therefore we carryout hyperparameter tuning tasks with a validation set before evaluating the performance of each model. In the case ofOCT with parallel splits, we create a grid that considers three different values for themaximum depthparameter (5, 10,and 15) and three different values for theminbucketparameter (1, 5, and 10). In the case of OCT-H, in order not tocompromise runtime given the size of the dataset, we choose to fix theminbucketparameter to 1 and train two modelswith amaximum depthof 2 and 3, respectively. Since OCT-H considers hyperplane splits, and we decide not to enforceany sparsity constraint, choosing any other depth value beyond the selected ones does not provide impactful predictivepower, degrades the interpretability of these models, and unnecessarily increases runtime.All models are trained using theOptimalTreeClassifierwith parallelization and using the misclassification erroras criterion to determine the best combination of hyperparameters. Additionally, we decide to duplicate the numberof analyses and repeat both the OCT and OCT-H cases choosing to equally prioritize the 4 classes by means of theautobalanceattribute. The rationale behind this decision can be easily understood by looking at figures 5 and 6 in theAppendix. We cover the details of these figures in the coming section but the reader can notice that whenautobalanceis not used there is no leaf that predicts class 2. This is corrected when enforcing an equal importance among classes,helping understand the relationship between players’ behaviour and this class.
+Understanding the tradeoff between interpretability and predictive power they have, in this work we consider OCT models with both parallel and hyperplane (OCT-H) splits in order to gain insights on what makes users perform well and to obtain models capable of reaching high scores in the competition, respectively.
+
+We understand the importance of training models with an appropriate selection of hyperparameters, therefore we carry out hyperparameter tuning tasks with a validation set before evaluating the performance of each model. In the case of OCT with parallel splits, we create a grid that considers three different values for the maximum _depth_ parameter (5, 10, and 15) and three different values for the _minbucketparameter_ (1, 5, and 10). 
+
+In the case of OCT-H, in order not to compromise runtime given the size of the dataset, we choose to fix _theminbucketparameter_ to 1 and train two models with a maximum _depth_ of 2 and 3, respectively. Since OCT-H considers hyperplane splits, and we decide not to enforce any sparsity constraint, choosing any other depth value beyond the selected ones does not provide impactful predictive power, degrades the interpretability of these models, and unnecessarily increases runtime. 
+
+All models are trained using the ``OptimalTreeClassifier`` with parallelization and using the _misclassification error_ as criterion to determine the best combination of hyperparameters. Additionally, we decide to duplicate the number of analyses and repeat both the OCT and OCT-H cases choosing to equally prioritize the 4 classes by means of the _autobalance_ attribute. The rationale behind this decision can be easily understood by looking at Figures A1 and A2 in the Appendix. We cover the details of these figures in the coming section but the reader can notice that when _autobalance_ is not used there is no leaf that predicts class 2. This is corrected when enforcing an equal importance among classes, helping understand the relationship between players’ behaviour and this class.
 
 ### Results - Predictive power
 
@@ -114,31 +119,16 @@ By looking at the tables we can immediately appreciate the dominance of OCT-H mo
 
 <figure class="align-center">
   <img width = "50" src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/training_performance.png" alt="">
-  <figcaption>Figure 6. Training performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
+  <figcaption>Table 1. Training performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
 </figure> 
 
 <figure class="align-center">
   <img width = "50" src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/out_of_sample_performance.png" alt="">
-  <figcaption>Figure 7. Out-of-sample performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
+  <figcaption>Table 2. Out-of-sample performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
 </figure> 
 
-\\[ a^2 = b^2 \\] 
-
-<figure>
-  <iframe width= "100%" height= "400" frameborder= "0" scrolling="yes" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_no_autobalance.html">
-  </iframe>
-  <figcaption>Figure 8. (interactive) OCT without the autobalance setting.</figcaption>
-</figure>
-
-<figure>
-  <iframe width= "100%" height= "400" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_autobalance.html">
-  </iframe>
-  <figcaption>Figure 9. (interactive) OCT with autobalance.</figcaption>
-</figure>
 
 ## Additional optimization-based approaches
-
-
 
 ## Conclusions and Future Work
 

@@ -144,13 +144,13 @@ By looking at the tables we can immediately appreciate the dominance of OCT-H mo
 
 ## <a name="appendix"></a>Appendix
 
-<figure>
+<figure style="width: 1200px">
   <iframe width= "100%" height= "400" frameborder= "0" scrolling="yes" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_no_autobalance.html">
   </iframe>
   <figcaption>Figure A1. (interactive) OCT without the autobalance setting.</figcaption>
 </figure>
 
-<figure>
+<figure style="width: 1200px">
   <iframe width= "100%" height= "400" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_autobalance.html">
   </iframe>
   <figcaption>Figure A2. (interactive) OCT with autobalance.</figcaption>

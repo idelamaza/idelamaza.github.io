@@ -18,8 +18,3 @@ An updated copy of my resumé can be downloaded [here]({{ site.url }}{{ site.bas
   * Responsible, hard-working, adaptable and very motivated industrial engineer with a strong interest in data analytics, optimization, artificial intelligence and machine learning
   * Proven abilities to work independently and under high pressure
   * Passion for problem solving and constant personal growth
-
-
-
-
-

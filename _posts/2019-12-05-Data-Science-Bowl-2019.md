@@ -14,7 +14,7 @@ header:
 
 This work was presented as the course final project for MIT 15.095: _Machine Learning Under a Modern Optimization Lens_, by Prof. Dimitris Bertsimas. A printer-friendly version of the whole report can be downloaded [here]({{ site.url }}{{ site.baseurl }}/files/2019-12-05-Data-Science-Bowl-2019/report.pdf), and a summary in the form of a poster can be found [here]({{ site.url }}{{ site.baseurl }}/files/2019-12-05-Data-Science-Bowl-2019/poster.pdf). All the used code can be found at [GitHub](https://github.com/inigodelamaza/Data-Science-Bowl-2019). Special thanks to my colleague and co-author of the project, [Juan José Garau](http://systemarchitect.mit.edu/students.php#garau).
 
-The project comprises the study of the application of predictive, optimization-based classification algorithms to a real-world task. Looking towards that aim, an online data science competition is the perfect medium due to both the availability of high-quality data, and the possibility of comparing different models and outcomes with the ones achieved by other participants using conventional heuristic methods. The online platform Kaggle is one of the most popular online competition organizer and 2019's edition of the [Data Science Bowl®](https://www.kaggle.com/c/data-science-bowl-2019/overview "Data Science Bowl®")(DSB) is a perfect fit for the objectives of this project.
+The project comprises the study of the application of predictive, optimization-based classification algorithms to a real-world task. Looking towards that aim, an online data science competition is the perfect medium due to both the availability of high-quality data, and the possibility of comparing different models and outcomes with the ones achieved by other participants using conventional heuristic methods. The online platform Kaggle is the most popular online competition organizer and 2019's edition of the [Data Science Bowl®](https://www.kaggle.com/c/data-science-bowl-2019/overview "Data Science Bowl®")(DSB) is a perfect fit for the objectives of this project.
 
 ## Introduction
 
@@ -24,26 +24,26 @@ Online apps are a key element in the democratization of education all over the w
 
 The app has a diverse range of educational material including videos, assessments, activities, and games. These are designed to help kids learn different measurement concepts such as weight, capacity, or length. The DSB challenge focuses on predicting players’ assessment performance based on the information the app gathers on each game session. Every detailed interaction a player has with the app is recorded in the form of an event, including things like mediacontent display, touchscreen coordinates, and assessment answers. 
 
-This data is highly fine-grained, as multiple events might be recorded in less than one second. With this data, the competition participants must predict the performance ofcertain assessments whose outcomes are unknown, given the history of a player up to that assessment. Based on the prediction, the goal is to __classify__ the player into one of four performance groups, which represent how many attempts takes a kid to successfully complete the assessment. The aim of the challenge is to help PBS KIDS discover important relationships between engagement with high-quality educational media and learning processes, by understanding what influences the most on the childrens’ performance and learning rate.
+This data is highly fine-grained, as multiple events might be recorded in less than one second. With this data, the competition participants must predict the performance ofcertain assessments whose outcomes are unknown, given the history of a player up to that assessment. Based on the prediction, the goal is to __classify__ the player into one of four performance groups, which represent how many attempts takes a kid to successfully complete the assessment. The aim of the challenge is to help PBS KIDS discover important relationships between engagement with high-quality educational media and learning processes, by understanding what influences the most on childrens’ performance and learning rate.
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/pbs-app.png" alt="">
   <figcaption>Figure 1. A look at PBS KIDS Measure Up! app.</figcaption>
 </figure> 
 
-We tackle the problem using a feature extraction process focused on exploiting the time series nature of the data and the application of different Optimal Classification Tree ([Bertsimas & Dunn, 2019](#bertsimas2019)) models in order to both achieve a high predictive power and gain interpretable insights. Additionally, we provide two ideas of how this work could continue leveraging the potential of optimization-based approaches.
+We tackle the problem using a feature extraction process focused on exploiting the time series nature of the data and the application of different Optimal Classification Tree ([Bertsimas & Dunn, 2019](#bertsimas2019)) models in order to both achieve a high predictive power and gain interpretable insights. Additionally, we provide two ideas of how this work could continue leveraging the potential of optimization-based machine learning methods.
 
 ## Data Overview
 
-The dataset provided by the competition is primarily composed of all the game analytics the PBS KIDS Measure UP! app gathers anonymously from its users. In this app, children navigate through a map and complete various levels, which may be activities, video clips, games, or assessments (each of them considered a different ``game_session``, and its nature expressed as ``type``).  
+The dataset provided by the competition is primarily composed of all the game analytics the PBS KIDS Measure UP! app gathers anonymously from its users. In this app, children navigate through a map and complete activities, video clips, games, or assessments (each of them considered a different ``game_session``, and its nature expressed as ``type``).  
 
 Each assessment is designed to test a child’s comprehension of a certain set of measurement-related skills. There are five assessments: _Bird Measurer_, _Cart Balancer_, _Cauldron Filler_, _Chest Sorter_, and _Mushroom Sorter_. 
 
 ### Data volume
 
-To help the reader understand the data, Figure 2 shows the tree-like structure of the dataset. Each application install is represented by an ``installation_id``, which can be considered to map to one single user. The training set provides the full history of gameplay data of 17,000 ``installation_ids``, while the test set has information for 1,000 players.  Moreover, each ``installation_id`` has multiple ``game_sessions`` of different types (activities, games, assessments...). In total there are around 300,000 ``game_sessions`` in the training set and almost 30,000 in thetest set. 
+To help the reader understand the data, Figure 2 shows the tree-like structure of the dataset. Each application install is represented by an ``installation_id``, which can be considered to map to one single user. The training set provides the full history of gameplay data of 17,000 ``installation_ids``, while the test set has information for 1,000 players.  Moreover, each ``installation_id`` has multiple ``game_sessions`` of different types (activities, games, assessments...). In total there are around 300,000 ``game_sessions`` in the training set and almost 30,000 in the test set. 
 
-Finally, each ``game_session`` is composed by several events that represent every possible interaction between the user and the app. These events are identified with a unique ID (``event_id``), and have associated data such as screen coordinates, timestamps, durations, etc, depending on the nature of the event. In total, there are around 11.3M events in the training set and 1.1M in the test set. We can conclude the dimensionality of the problem is high and the data is presented in the form of dependencies and __time series__.
+Finally, each ``game_session`` is composed by several events that represent every possible interaction between the user and the app. These events are identified with a unique ID (``event_id``), and have associated data such as screen coordinates, timestamps, durations, etc, depending on the event's nature. In total, there are around 11.3M events in the training set and 1.1M in the test set. We can conclude that the dimensionality of the problem is high and the data is presented in the form of dependencies and __time series__.
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/data_overview.png" alt="">
@@ -75,17 +75,16 @@ However, in many cases, information from previous complete assessments is given.
 ## Feature Engineering
 
 The process of extracting features to train the machine learning model is time-consuming and challenging in this specific competition. Not only the provided data is in the form of a time series, but it also has a large amount of unnecessary information that needs to be filtered. In this section the process of transitioning from the original dataset to a dataset suitable to make predictions upon is explained.
+### Structuring data as time series
 
-### Structuring data as time series
+The test set comprises all historical data from different users prior to the first attempt of an assessment.  Therefore, the time dimension is a key feature of this dataset, as only the events that have happened before each assessment can be considered for the definition of its associated features. This leads to the first step of the featuring engineering process: redefining the data for each player in order to leverage the time series structure of the original data. 
 
-The test set comprises all historical data from different users prior to an assessment first attempt.  Therefore, the time dimension is a key feature of this dataset, as only the events that have happened before each assessment can be considered for the definition of its associated features. This leads to the first step of the featuring engineering process:redefining the data for each player in order to leverage the time series structure of the original data. 
-
-Figure 4 shows how the original data is organized for a specific player (``installation_id``). Our approach is to transform all this information into multiple training data points that exploit the history of a player’s interactions with the app. Taking this approach allows training the model with only the information it is going to have available later in the prediction process, and avoids the fatal conceptual error of using future data for any assessment. It is also true that it entails getting rid of some of the available data, as any registered event happening after an assessment completion would not be used (see events to right of the second assessment in Figure 4).
+Figure 4 shows how the original data is organized for a specific player (``installation_id``). Our approach is to transform all this information into multiple training data points that exploit the history of a player’s interactions with the app. Taking this approach allows training the model with only the information it is going to have available later in the prediction process, and avoids the fatal conceptual error of using future data for any assessment. It is also true that it leads to the deletion some of the available data, as any registered event happening after an assessment completion would not be used (see events to right of the second assessment in Figure 4).
 
 <figure>
   <iframe width= "800" height= "500" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/timeseries.html">
   </iframe>
-  <figcaption>Figure 4. (interactive) Time series representation of the game_sessions of a certain installation_id. The annotation above certain game_session shows the number of events they comprise (notice that all Clips (green) have only one event, as there is no interaction of the player recorded).</figcaption>
+  <figcaption>Figure 4. (interactive) Time series representation of the game_sessions of a certain installation_id. The annotation above certain game_session shows the number of events they comprise (notice that all Clips (green) have only one event, as there is no recorded interaction with the player).</figcaption>
 </figure>
 
 ### Training instance definition
@@ -105,7 +104,7 @@ The objectives of the feature creation approach are twofold: first, address how 
 
 #### Assessment-related features
 
-In order to provide the model with information regarding the difficulty of the assessment whose outcome has to be predicted, we compute both the mean and the median ``accuracy`` (continuous variable showing the percent of correct answers, different from the ``accuracy_group``) as well as the mean and the median ``accuracy_group`` (discrete labels from 0 to 4 as it has been explained before). Even if they might be correlated, the optimization-based models that we use are not to be affected by this issue, and the metric that better describes the correlation between the difficulty of the assessment and the performance of the children will be used for the prediction process. 
+In order to provide the model with information regarding the difficulty of the assessment whose outcome has to be predicted, we compute both the mean and the median ``accuracy`` (continuous variable showing the percent of correct answers, different from the ``accuracy_group``) as well as the mean and the median ``accuracy_group`` (discrete labels from 0 to 4 as it has been explained before). Even if they might be correlated, the optimization-based models that we use are not affected by this issue, and the metric that better describes the correlation between the difficulty of the assessment and the performance of the children will be automatically selected by the model. 
 
 As shown in Figure 3, some assessments are clearly easier than others. Therefore, we include both the assessment ``title`` and the ``world`` it belongs to (related to length, capacity or weight questions) as one-hot-encoded features. The latter is meant to provide some information on the type of questions the user is going to face, allowing the model to detect certain user profiles that are better at questions related with weight than at assessments covering capacity concepts, for example.
 
@@ -116,10 +115,10 @@ The largest proportion of the features associated to each assessment are the one
 Seeking the quantification of how experienced each player is at the moment of each assessment, different metrics have been developed:
 
 - Counters (every time a particular instance has been registered) of the different:
-    - ``game_session`` by ``type`` (Assessment | Clip | Game | Activity)
+    - ``game_session`` by ``type`` (Assessment, Clip, Game, Activity)
     - ``game_session`` by ``title`` (all the possible games, activities, etc, the app includes)
     - ``event_code``
-    - ``game_session`` and ``event_code`` from the same world than the assessment to be predicted (gives a sense of the experience of the player with that particular family of concepts)
+    - ``game_session`` and ``event_code`` from the same world of the assessment to be predicted (gives a sense of the experience of the player with that particular family of concepts)
     - Times the player has already tried to complete the same assessment to be predicted, and its performance
 - Total number of ``game_session`` and ``event_id``
 - Time played by ``game_session`` ``type``, and total number of minutes played
@@ -127,30 +126,30 @@ Seeking the quantification of how experienced each player is at the moment of ea
 - Average performance of the player in previous assessments 
 - Day of the week and time when the assessment has been completed
 
-All the discrete features (e.g. accuracy group of the previously completed assessments) have been encoded as one-hot. After the feature engineering process, the final training dataset has 23,788 rows, 129 features and 4 possible classification outcomes. In the following section we explain which models are used to make predictions and how we can further leverage the data to better align ourselves with the purpose of the developer.
+All the discrete features (e.g. accuracy group of the previously completed assessments) have been encoded as one-hot. After the feature engineering process, the final training dataset has 23,788 rows, __129 features__ and 4 possible classification outcomes. In the following section we explain which models are used to make predictions and how we can further leverage the data to better align ourselves with the purpose of the developer.
 
 ## Optimal Classification Trees
 
-Since the task is to predict the accuracy group of a player before taking an assessment, in this work we focus on optimization-based classification models, namely Optimal Classification Trees (OCT). By means of Julia’s package [Interpretable AI](https://docs.interpretable.ai/) (IAI), in this section we train several OCT models and analyze their performance.
+Since the task is to predict the ``accuracy_group`` of a player before taking an assessment, in this work we focus on optimization-based classification models, namely Optimal Classification Trees (OCT). By means of Julia’s package [Interpretable AI](https://docs.interpretable.ai/) (IAI), in this section we train several OCT models and analyze their performance.
 
 ### Models
 
 Understanding the tradeoff between interpretability and predictive power they have, in this work we consider OCT models with both parallel and hyperplane (OCT-H) splits in order to gain insights on what makes users perform well and to obtain models capable of reaching high scores in the competition, respectively.
 
-We understand the importance of training models with an appropriate selection of hyperparameters, therefore we carry out hyperparameter tuning tasks with a validation set before evaluating the performance of each model. In the case of OCT with parallel splits, we create a grid that considers three different values for the maximum _depth_ parameter (5, 10, and 15) and three different values for the _minbucketparameter_ (1, 5, and 10). 
+We understand the importance of training models with an appropriate selection of hyperparameters, therefore we carry out hyperparameter tuning tasks with a validation set before evaluating the performance of each model. In the case of OCT with parallel splits, we create a grid that considers three different values for the _maximum depth_ parameter (5, 10, and 15) and three different values for the _min bucket_ parameter (1, 5, and 10). 
 
-In the case of OCT-H, in order not to compromise runtime given the size of the dataset, we choose to fix _theminbucketparameter_ to 1 and train two models with a maximum _depth_ of 2 and 3, respectively. Since OCT-H considers hyperplane splits, and we decide not to enforce any sparsity constraint, choosing any other depth value beyond the selected ones does not provide impactful predictive power, degrades the interpretability of these models, and unnecessarily increases runtime. 
+In the case of OCT-H, in order not to compromise runtime given the size of the dataset, we choose to fix the _min bucket_ parameter to 1 and train two models with a _maximum depth_ of 2 and 3, respectively. Since OCT-H considers hyperplane splits, and we decide not to enforce any sparsity constraint, choosing any other depth value beyond the selected ones does not provide impactful predictive power, degrades the interpretability of these models, and increases runtime unnecessarily. 
 
-All models are trained using the ``OptimalTreeClassifier`` with parallelization and using the _misclassification error_ as criterion to determine the best combination of hyperparameters. Additionally, we decide to duplicate the number of analyses and repeat both the OCT and OCT-H cases choosing to equally prioritize the 4 classes by means of the _autobalance_ attribute. The rationale behind this decision can be easily understood by looking at Figures A1 and A2 in the Appendix. We cover the details of these figures in the coming section but the reader can notice that when _autobalance_ is not used there is no leaf that predicts class 2. This is corrected when enforcing an equal importance among classes, helping understand the relationship between players’ behaviour and this class.
+All models are trained using the ``OptimalTreeClassifier`` with parallelization and using the _misclassification error_ as the criterion to determine the best combination of hyperparameters. Additionally, we decide to duplicate the number of analyses and repeat both the OCT and OCT-H cases choosing to equally prioritize the 4 classes by means of the _autobalance_ attribute. The rationale behind this decision can be easily understood by looking at Figures A1 and A2 in the Appendix. We cover the details of these figures in the coming section but the reader can notice that when _autobalance_ is not used there is no leaf that predicts class 2. This is corrected when enforcing an equal importance among classes, helping understand the relationship between players’ behaviour and this class.
 
 ### Predictive power
 
-Tables 1 and 2 show the training and out-of-sample performance of the OCT and OCT-H models with and without theautobalanceattribute. In this work we analyze the performance using two different metrics: on one hand we considerthe accuracy, which takes into account the proportion of correctly classified labels; on the other hand we use the Cohen’skappa coefficient with quadratic weights, which is the official metric of the competition and is defined as \\[\kappa = 1 - \frac{\sum_{i=1}^k\sum_{j=1}^kw_{ij}x_{ij}}{\sum_{i=1}^k\sum_{j=1}^kw_{ij}m_{ij}}\\] where \\(x_{ij}\\) represents the number of datapoints from class \\(i\\) that have been classified as class \\(j\\), \\(m_{ij}\\) is the expected number of datapoints from class \\(i\\) that have been classified as class \\(j\\), and finally \\(w_{ij}\\) is a weight factor defined as \\[w_{ij} = 1 - \frac{i^2}{(j-i)^2}\\]
+Tables 1 and 2 show the training and out-of-sample performance of the OCT and OCT-H models with and without the _autobalance_ attribute. In this work we analyze the performance using two different metrics: on one hand we consider the accuracy, which takes into account the proportion of correctly classified labels; on the other hand we use the Cohen’s kappa coefficient with quadratic weights, which is the official metric of the competition and is defined as \\[\kappa = 1 - \frac{\sum_{i=1}^k\sum_{j=1}^kw_{ij}x_{ij}}{\sum_{i=1}^k\sum_{j=1}^kw_{ij}m_{ij}}\\] where \\(x_{ij}\\) represents the number of datapoints from class \\(i\\) that have been classified as class \\(j\\), \\(m_{ij}\\) is the expected number of datapoints from class \\(i\\) that have been classified as class \\(j\\), and finally \\(w_{ij}\\) is a weight factor defined as \\[w_{ij} = 1 - \frac{i^2}{(j-i)^2}\\]
 
-By looking at the tables we can immediately appreciate the dominance of OCT-H models regardless of the use of the _autobalance_ attribute. The _autobalance_ feature works as expected, models without it perform better but that entails completely missing a class. This can be observed in figures [A1](#appendix) and [A2](#appendix) from the appendix, which do not have any leaf predicting class 2 (kids who solved the assessment in the second attempt).
+By looking at the tables we can immediately appreciate the dominance of OCT-H models regardless of the use of the _autobalance_ attribute. The _autobalance_ feature works as expected, models without it perform better but that entails missing a class completely. This can be observed in figures [A1](#appendix) and [A2](#appendix) from the appendix, which do not have any leaf predicting class 2 (kids who solved the assessment in the second attempt).
 
-<figure class="align-center">
-  <img height = "50%" src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/training_performance.png" alt="">
+<figure class="align-center" style="height: 50%">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/training_performance.png" alt="">
   <figcaption>Table 1. Training performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
 </figure> 
 

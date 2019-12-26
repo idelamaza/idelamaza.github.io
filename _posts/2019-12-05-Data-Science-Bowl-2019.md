@@ -158,7 +158,7 @@ By looking at the tables we can immediately appreciate the dominance of OCT-H mo
   <figcaption>Table 2. Out-of-sample performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
 </figure> 
 
-The model that achieves the best performance, both in terms of accuracy and the quadratic kappa coefficient, is OCT-H without balancing the outcome classes. Its kappa coefficient is 0.540, which at the moment this report is about to be submitted, is less than 0.03 points away from the first competitor in the leaderboard (with \\(\kappa$ = 0.567\\)). From a general perspective, only 90 competitors out of approximately 1900 (less than 5%) achieve better performance than our model. This result highlights the predictive potential of optimization-based classification trees.
+The model that achieves the best performance, both in terms of accuracy and the quadratic kappa coefficient, is OCT-H without balancing the outcome classes. Its kappa coefficient is 0.540, which at the moment this report is about to be submitted, is less than 0.03 points away from the first competitor in the leaderboard (with \\(\kappa = 0.567\\)). From a general perspective, only 90 competitors out of approximately 1900 (less than 5%) achieve better performance than our model. This result highlights the predictive potential of optimization-based classification trees.
 
 ### Interpretability
 
@@ -225,6 +225,18 @@ Following this direction, we have opened the door to two additional optimization
   <iframe width= "100%" height= "400" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_oct_autobalance.html">
   </iframe>
   <figcaption>Figure A2. (interactive) OCT with autobalance.</figcaption>
+</figure>
+
+<figure style="width: 1000px">
+  <iframe width= "100%" height= "400" frameborder= "0" scrolling="yes" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_octh_no_autobalance.html">
+  </iframe>
+  <figcaption>Figure A3. (interactive) OCT-H without the autobalance setting.</figcaption>
+</figure>
+
+<figure style="width: 1000px">
+  <iframe width= "100%" height= "400" frameborder= "0" scrolling="no" id="igraph" seamless="seamless" src="/charts/2019-12-05-Data-Science-Bowl-2019/tree_octh_autobalance.html">
+  </iframe>
+  <figcaption>Figure A4. (interactive) OCT-H with autobalance.</figcaption>
 </figure>
 
 ## References

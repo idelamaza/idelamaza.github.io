@@ -148,13 +148,13 @@ Tables 1 and 2 show the training and out-of-sample performance of the OCT and OC
 
 By looking at the tables we can immediately appreciate the dominance of OCT-H models regardless of the use of the _autobalance_ attribute. The _autobalance_ feature works as expected, models without it perform better but that entails missing a class completely. This can be observed in figures [A1](#appendix) and [A2](#appendix) from the appendix, which do not have any leaf predicting class 2 (kids who solved the assessment in the second attempt).
 
-<figure class="align-center" style="height: 50%">
+<figure class="align-center" style="width: 50%">
   <img src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/training_performance.png" alt="">
   <figcaption>Table 1. Training performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
 </figure> 
 
 <figure class="align-center">
-  <img height = "50%" src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/out_of_sample_performance.png" alt="">
+  <img width = "50%" src="{{ site.url }}{{ site.baseurl }}/images/posts/2019-12-05-Data-Science-Bowl-2019/out_of_sample_performance.png" alt="">
   <figcaption>Table 2. Out-of-sample performance of OCT and OCT-H with and without the autobalance attribute.</figcaption>
 </figure> 
 
@@ -195,7 +195,7 @@ As presented in the previous section, in this work we have carried out hyperpara
 
 Consequently, when making random splits of the dataset, there is a high chance of obtaining unbalanced splits and not having an equal distribution of data points between the train and validation datasets. In order to solve this problem, we propose formulating a mathematical program to optimally split the dataset. This formulation, which is able to provide the optimal split regardless of the amount of splits to be created, is focused on reducing the discrepancies between the different groups. Since we are dealing with a dataset with more than one feature (129 to be precise), the formulation also takes into account multicovariates.
 
-The last of the notebooks appended contains the function ``split_opt``, which contains the code of the formulation in Julia. We propose a warm start based on the rerandomization split rule. Although we can't provide results due to the dimensionality of the problem and runtime constraints, we understand this optimization-based procedure would allow us to obtain the best splits among data in order to increase the robustness of our models. In the end, making sure the models are robust is key to ensure the educational effectiveness of the app. 
+The function ``split_opt`` in the associated GitHub repository contains the code of this formulation in Julia. We propose a warm start based on the rerandomization split rule. Although we can't provide results due to the dimensionality of the problem and runtime constraints, we understand this optimization-based procedure would allow us to obtain the best splits among data in order to increase the robustness of our models. In the end, making sure the models are robust is key to ensure the educational effectiveness of the app. 
 
 ### Optimal Prescription Trees
 

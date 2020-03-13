@@ -80,6 +80,13 @@
         </li>
       {% endif %}
 
+      {% if author.medium %}
+        <li>
+          <a href="https://medium.com/@{{ author.medium }}"><i class="fab fa-fw fa-medium" aria-hidden="true"></i> Medium
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.keybase %}
         <li>
           <a href="https://keybase.io/{{ author.keybase }}" itemprop="sameAs" rel="nofollow noopener noreferrer">

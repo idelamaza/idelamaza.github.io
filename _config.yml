@@ -109,12 +109,13 @@ analytics:
 author:
   name             : "Iñigo de la Maza"
   avatar           : "/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Industrial Engineer at MIT"
+  bio              : "Data Scientist at MIT"
   location         : "Boston, MA"
   email            : "delamaza@mit.edu"
-  cv               : "/files/Resume_delaMaza.pdf"
+  cv               : "/files/Professional_Resume_delaMaza.pdf"
   linkedin         : "i-delamaza"
-  github           : "inigodelamaza"
+  github           : "idelamaza"
+  medium           : "idelamaza"
   
   #links:
   #  - label: "LinkedIn"

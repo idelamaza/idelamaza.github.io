@@ -10,11 +10,8 @@ header:
 {: style="text-align: center;"}
 ---
 
-My name is Iñigo de la Maza, I am an industrial engineer currently writing my Master Thesis at MIT on the development of computational models of blood coagulation under flow conditions. I am applying machine learning, mathematical modeling of systems biology and computational statistics techniques to understand the mechanisms behind unknown blood clotting phenomena and find direct applications in cardiovascular pharmacology. 
+I'm a passionate Data Scientist, highly skilled in machine learning, data visualization, and creative thinking, with proven ability to explain and present mathematical concepts and results to technical and non-technical audiences. I am currently working at MIT on the development of high-dimensional mathematical models of biomedical systems, and their application to the development of novel antithrombotic drugs. 
 
-I discovered my passion about data analytics around two years ago and I haven't stopped learning about this field eversince, whether it was with books, MOOC's or MIT courses. This is the place where the journey gets documented.
+I have recently graduated from both a M.Sc. in Industrial Engineering and a MBA, which have equipped me with a holistic approach to a broad variety of problems, and provided me with a solid theoretical basis of computational science, operations, and business strategy.
 
-An updated copy of my resumé can be downloaded [here]({{ site.url }}{{ site.baseurl }}/files/Resume_delaMaza.pdf). However, here are some facts about me:
-  * Responsible, hard-working, adaptable and very motivated industrial engineer with a strong interest in data analytics, optimization, artificial intelligence and machine learning
-  * Proven abilities to work independently and under high pressure
-  * Passion for problem solving and constant personal growth
+I'm always looking to leverage my multidisciplinary background to help solve challenging data-centered problems. An updated copy of my resumé can be downloaded [here]({{ site.url }}{{ site.baseurl }}/files/Resume_delaMaza.pdf).
